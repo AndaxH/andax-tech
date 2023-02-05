@@ -1,7 +1,7 @@
 ---
 type: posts
-title: Posts
+title: Past Projects
 date: 2021-03-18
 ---
 
-# Posts
+# Past Projects
