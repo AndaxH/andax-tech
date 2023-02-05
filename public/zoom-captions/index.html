@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Zoom Captions</title>
+    <link href="captions.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div>
+        <h1>Zoom Captions</h1>
+        <h2>API Token</h2>
+        <textarea
+          id="api-token"
+          placeholder="Enter the API token here"
+        ></textarea>
+        <button id="load-api-token">Load API token</button>
+        <h2>Captions</h2>
+        <textarea
+          id="textarea"
+          placeholder="Enter text for captions here"
+        ></textarea>
+        <button id="load-text">Load text</button>
+        <p id="api-token-preview">❌API Token not loaded yet!</p>
+      </div>
+      <div>
+        <h3 id="preview-header">Next caption:</h3>
+        <p id="preview-text">No text loaded :(</p>
+        <button id="send-caption">Send</button>
+        <button id="skip-caption">Skip</button>
+        <button id="undo">Undo</button>
+        <hr />
+        <h3>Loaded text in full:</h3>
+        <p id="loaded-text"></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="captions.js"></script>
+  </body>
+</html>

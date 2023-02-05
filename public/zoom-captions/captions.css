@@ -1,0 +1,26 @@
+textarea {
+  width: 240px;
+  height: 80px;
+  padding: 8px;
+}
+
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+#root div {
+  width: 40%;
+}
+
+textarea {
+  width: 100%;
+}
+
+#api-token-preview {
+  width: 256px;
+  overflow-wrap: break-word;
+}
