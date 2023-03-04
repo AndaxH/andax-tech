@@ -2,16 +2,23 @@ const YEAR = new Date().getFullYear()
 
 export default {
   footer: (
-    <small style={{ display: 'block', marginTop: '8rem' }}>
+    <small style={{ display: 'block', marginTop: '4rem' }}>
+      <p>
+        <a href="https://github.com/AndaxH">GitHub</a>
+      </p>
+      <p>
+        <a href="https://twitter.com/AndaxTech">Twitter</a>
+      </p>
       <time>{YEAR}</time> © Andy Hammond.
       <style jsx>{`
         a {
           float: right;
+          margin-left: 1rem;
         }
         @media screen and (max-width: 480px) {
           article {
             padding-top: 2rem;
-            padding-bottom: 4rem;
+            padding-bottom: 2rem;
           }
         }
       `}</style>
