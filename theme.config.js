@@ -4,6 +4,9 @@ export default {
   footer: (
     <small style={{ display: 'block', marginTop: '4rem' }}>
       <p>
+        <a href="https://www.linkedin.com/in/andrewkhammond/">LinkedIn</a>
+      </p>
+      <p>
         <a href="https://github.com/AndaxH">GitHub</a>
       </p>
       <p>
