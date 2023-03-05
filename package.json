@@ -22,5 +22,8 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "semi": false
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
