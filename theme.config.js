@@ -26,5 +26,6 @@ export default {
         }
       `}</style>
     </small>
-  )
+  ),
+  darkMode: true
 }
