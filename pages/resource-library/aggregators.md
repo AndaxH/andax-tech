@@ -1,6 +1,6 @@
 ---
 title: Aggregators
-date: 2023-03-05
+date: 2023-03-11
 description: Collections of online resources about software development
 tag: web development, software development, frontend, backend, DevOps
 author: You
