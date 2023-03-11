@@ -2,7 +2,7 @@
 title: Hearthsounds
 date: 2017/10/18
 description: In-browser Hearthstone card guessing game
-tag: web development
+tag: personal project
 author: You
 ---
 
