@@ -14,13 +14,6 @@
   font-named-instance: 'Italic';
 }
 
-[data-theme='dark'],
-[data-theme='dark'] body {
-  color: #fff;
-  background: #35363A;
-}
-
-
 body {
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -61,6 +54,18 @@ details summary {
 
 img.next-image {
   margin: 0;
+}
+
+[class='dark'],
+[class='dark'] body {
+  color: #fff;
+  background: #202124;
+}
+
+[class='light'],
+[class='light'] body {
+  color: #000;
+  background: #fff;
 }
 
 .prose a {
