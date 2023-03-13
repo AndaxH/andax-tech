@@ -1,6 +1,6 @@
 ---
 title: The Zeitgeist of Software Development
-date: 2023-03-11
+date: 2023-03-13
 description: In case you don't speak German this means the "Spirit of the age"
 tag: zeitgeist, web development, software development, frontend, backend, devops
 author: You
