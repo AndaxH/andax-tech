@@ -1,6 +1,6 @@
 ---
 title: Misc Resources
-date: 2023-03-11
+date: 2023-03-12
 description: Miscellaneous online resources about software development
 tag: web development, software development, frontend, backend, DevOps
 author: You
