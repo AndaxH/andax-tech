@@ -89,3 +89,7 @@ iframe {
     min-height: 360px;
   }
 }
+
+figcaption {
+  text-align: center;
+}
