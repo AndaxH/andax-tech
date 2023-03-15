@@ -8,15 +8,21 @@ date: 2022-03-13
 
 import Image from 'next/image'
 
-<Image
-  src="/images/NotACleverMan.jpeg"
-  alt="Photo"
-  width={1500}
-  height={500}
-  layout="responsive"
-  priority
-  className="next-image"
-/>
+<figure>
+  <Image
+    src="/images/NotACleverMan.jpeg"
+    alt="Photo"
+    width={1500}
+    height={500}
+    layout="responsive"
+    priority
+    className="next-image"
+  />
+  <figcaption>
+    Image from a favourite [web comic](https://i.imgur.com/nKSks.jpg) of mine
+    depicting a man saying "I am not a clever man."
+  </figcaption>
+</figure>
 
 ### 👋 Welcome to my little corner of the internet
 

@@ -14,6 +14,7 @@ HTML, [CSS](/resource-library/css) and JavaScript are the core components of use
 
 import Image from 'next/image'
 
+<figure>
 <Image
   src="/images/html-js-css.jpeg"
   alt="Photo"
@@ -23,6 +24,10 @@ import Image from 'next/image'
   priority
   className="next-image"
 />
+  <figcaption>
+    An image illustrating a mental model for thinking about Frontend technologies with HTML as a human's skeleton, JavaScript as the brain & nervous system and CSS as their skin, hair and clothing (including a shirt that says Mr. Website).
+  </figcaption>
+</figure>
 
 - HTML (Skeleton)
   - Your foundational structure for webpages
