@@ -1,6 +1,9 @@
+import { ScrollToTopButton } from './components/scroll-to-top-button'
+
 const YEAR = new Date().getFullYear()
 
 export default {
+  postFooter: <ScrollToTopButton />,
   footer: (
     <small style={{ display: 'block', marginTop: '4rem' }}>
       <p>
