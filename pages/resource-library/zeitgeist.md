@@ -1,6 +1,6 @@
 ---
 title: The Zeitgeist of Software Development
-date: 2023-03-13
+date: 2023-03-17
 description: In case you don't speak German this means the "Spirit of the age"
 tag: zeitgeist, web development, software development, frontend, backend, devops
 author: You
@@ -42,3 +42,7 @@ Written by [Sherif Mansour](https://twitter.com/sherifmansour) who is an absolut
 
 Expanding on the above article from Sherif – a well known way of assessing software engineers and the classic archetypes folks fall into.
 We use a version of this is in performance assessments at Atlassian and are constantly expanding upon and improving it.
+
+## [Alice and Bob](https://en.m.wikipedia.org/wiki/Alice_and_Bob)
+
+> Alice and Bob are fictional characters commonly used as placeholders in discussions about cryptographic systems and protocols, and in other science and engineering literature where there are several participants in a thought experiment.
