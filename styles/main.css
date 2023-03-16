@@ -93,3 +93,9 @@ iframe {
 figcaption {
   text-align: center;
 }
+
+#scroll-to-top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
