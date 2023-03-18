@@ -8,7 +8,7 @@ author: You
 
 # Transparency
 
-I'm including this section inspired by https://kentcdodds.com/transparency to provide some context around where my money comes from and where my money goes (what you're supporting if you choose to support me).
+I wrote this page inspired by https://kentcdodds.com/transparency to provide some context around where my money comes from and where my money goes (what you're supporting if you choose to support me).
 
 ## 🚀 Vision
 
