@@ -98,4 +98,10 @@ figcaption {
   display: flex;
   gap: 8px;
   align-items: center;
+  font-size: larger;
+  font-weight: 500
+}
+
+#scroll-to-top span {
+  font-size: xx-large;
 }
