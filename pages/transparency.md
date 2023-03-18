@@ -16,7 +16,7 @@ My goal with this Resource Library is to help others discover quality informatio
 
 ## 👨‍💻 Employment
 
-I am currently employed by [Atlassian](https://www.atlassian.com/) as a Software Engineering Manager working on the product [Atlas](https://www.atlassian.com/software/atlas) and is my primary source of income.
+I am currently employed by [Atlassian](https://www.atlassian.com/) as a Software Engineering Manager working full time on the product [Atlas](https://www.atlassian.com/software/atlas). This is my primary source of income.
 
 ## 💰 Passive Income
 
