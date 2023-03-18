@@ -33,11 +33,11 @@ I have a handful of ideas that could be monetised:
 
 ## 👀 Free Stuff
 
-I'm a sucker for new tech and gadgets so I'd love to be the guinea pig for some products but I do not currently engage in this yet
+I'm a sucker for new tech, gadgets and products so I'd love to be the guinea pig for some products but I do not currently engage in this yet.
 
 ## 💳 Expenses
 
-I don't have many expenses when it comes to personal project endeavours as I make liberal use of free tiers provided by SaaS platforms. If any become popular there could be significant costs involved. For example, I'm quite keen on exploring some of the latest Artificial Intelligence APIs available which can get a bit price-y.
+I don't have many expenses when it comes to personal project endeavours as I make liberal use of free tiers provided by SaaS platforms. However, if any of these do become popular there could be significant costs involved. For example, I'm quite keen on exploring some of the latest Artificial Intelligence APIs available which can get a bit price-y.
 
 I'd love to be able to support more folks in their creative work online and plan to pay forward a % of any donations I receive to other creators online.
 
