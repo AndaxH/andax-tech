@@ -15,6 +15,12 @@ export default {
       <p>
         <a href="https://twitter.com/AndaxTech">Twitter</a>
       </p>
+      <p>
+        <a href="/transparency">Vision</a>
+      </p>
+      <p>
+        <a href="/">About</a>
+      </p>
       <time>{YEAR}</time> © Andy Hammond.
       <style jsx>{`
         a {
