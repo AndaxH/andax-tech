@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaArrowUp } from 'react-icons/fa'
 import { scrollToTop } from '../util/scroll-to-top'
 
 const ScrollToTopButton = () => {
@@ -11,7 +10,7 @@ const ScrollToTopButton = () => {
 
     return (
       <button id="scroll-to-top" onClick={scrollToTop}>
-        <FaArrowUp size="24" /> Scroll back to top
+        Scroll back to <span>🔝</span>
       </button>
     )
   } else {

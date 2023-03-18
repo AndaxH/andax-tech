@@ -16,7 +16,13 @@ export default {
         <a href="https://twitter.com/AndaxTech">Twitter</a>
       </p>
       <p>
+        <a href="/projects">Past Projects</a>
+      </p>
+      <p>
         <a href="/transparency">Vision</a>
+      </p>
+      <p>
+        <a href="/resource-library">Resource Library</a>
       </p>
       <p>
         <a href="/">About</a>

@@ -1,9 +1,7 @@
 ---
-title: Vision for andax.tech
-date: 2023-03-18
-description: Insight into motivations behind the resource library and any money involved
-tag: transparency
-author: You
+type: page
+title: Vision
+date: 2001-01-01
 ---
 
 # Transparency
