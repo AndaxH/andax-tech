@@ -1,6 +1,6 @@
 ---
 title: The Zeitgeist of Software Development
-date: 2023-03-17
+date: 2023-03-20
 description: In case you don't speak German this means the "Spirit of the age"
 tag: zeitgeist, web development, software development, frontend, backend, devops
 author: You
@@ -46,3 +46,8 @@ We use a version of this is in performance assessments at Atlassian and are cons
 ## [Alice and Bob](https://en.m.wikipedia.org/wiki/Alice_and_Bob)
 
 > Alice and Bob are fictional characters commonly used as placeholders in discussions about cryptographic systems and protocols, and in other science and engineering literature where there are several participants in a thought experiment.
+
+## [Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html)
+
+> Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
+> -- Melvin Conway
