@@ -10,7 +10,7 @@ I wrote this page inspired by https://kentcdodds.com/transparency to provide som
 
 ## 🚀 Vision
 
-My goal with this Resource Library is to help others discover quality information about the tech industry. Specifically focused on software development and being comprehensive enough for those who are completely new to the world of tech. I'm not sure exactly where this journey will take me but hopefully it improves the lives of others in some way.
+My goal with the [Resource Library](/resource-library) is to help others discover quality information about the tech industry. Specifically focused on software development, engineering, management and being comprehensive enough for those who are completely new to the world of tech. I'm not sure exactly where this journey will take me but hopefully it improves the lives of others in some way.
 
 ## 👨‍💻 Employment
 
