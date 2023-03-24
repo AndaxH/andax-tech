@@ -19,7 +19,7 @@ export default {
         <a href="https://twitter.com/AndaxTech">Twitter</a>
       </p>
       <p>
-        <a href="/projects">Past Projects</a>
+        <a href="/projects">Projects</a>
       </p>
       <p>
         <a href="/transparency">Vision</a>
@@ -28,7 +28,7 @@ export default {
         <a href="/gratitude">Gratitude</a>
       </p>
       <p>
-        <a href="/resource-library">Resource Library</a>
+        <a href="/library">Library</a>
       </p>
       <p>
         <a href="/">About</a>
