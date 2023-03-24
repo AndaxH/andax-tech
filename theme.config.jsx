@@ -25,6 +25,9 @@ export default {
         <a href="/transparency">Vision</a>
       </p>
       <p>
+        <a href="/gratitude">Gratitude</a>
+      </p>
+      <p>
         <a href="/resource-library">Resource Library</a>
       </p>
       <p>
