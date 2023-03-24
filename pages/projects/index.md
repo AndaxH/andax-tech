@@ -1,9 +1,9 @@
 ---
 type: posts
-title: Past Projects
+title: Projects
 date: 2000-01-01
 ---
 
-# Past Projects
+# Projects
 
 Below is a collection of some personal projects I've worked on in the past 😃

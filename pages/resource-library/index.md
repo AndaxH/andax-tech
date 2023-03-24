@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Resource Library
+title: Library
 date: 2002-01-01
 ---
 
