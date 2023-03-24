@@ -33,7 +33,7 @@ export default {
       <p>
         <a href="/">About</a>
       </p>
-      <time>{YEAR}</time> © Andy Hammond.
+      <time>{YEAR}</time> © Andrew Hammond.
       <style jsx>{`
         a {
           float: right;
