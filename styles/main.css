@@ -94,6 +94,10 @@ figcaption {
   text-align: center;
 }
 
+[class='dark'] figcaption {
+  color: #A5ABB8 !important;
+}
+
 #scroll-to-top {
   display: flex;
   gap: 8px;
