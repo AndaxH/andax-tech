@@ -47,7 +47,7 @@ The family, friends and colleagues who got me to where I am today
 - **Alex 💻**
   - thank you for making security 🔐 fun and teaching me about immutability in chat apps 💬 😅
 - **Sam 🍉**
-  - thank you for modelling what it means to be zen 🎑
+  - thank you for modelling what it means to be zen 🎑 and all the trust & responsibility you've given me
 - **Nathan 🍉**
   - thank you for being an excellent friend, confidant and rubber duck 🦆
 - **Oscar 🍉**
@@ -55,7 +55,7 @@ The family, friends and colleagues who got me to where I am today
 - **Jimmy 🍉**
   - thank you for keeping me honest and always being honest with me
 - **John 🍉**
-  - thank you for modelling person centric leadership
+  - thank you for modelling people centric leadership
 - **Sherif 🍉**
   - thank you for living and breathing what it means to build a product 🪄
 - **Bradley 🍉**
