@@ -12,22 +12,9 @@ https://en.wikipedia.org/wiki/Frontend_and_backend
 
 HTML, [CSS](/resource-library/css) and JavaScript are the core components of user interfaces and experiences on the web.
 
-import Image from 'next/image'
+![Photo](/images/html-js-css.jpeg)
 
-<figure>
-<Image
-  src="/images/html-js-css.jpeg"
-  alt="Photo"
-  layout="responsive"
-  width={564}
-  height={564}
-  priority
-  className="next-image"
-/>
-  <figcaption>
-    An image illustrating a mental model for thinking about Frontend technologies with HTML as a human's skeleton, JavaScript as the brain & nervous system and CSS as their skin, hair and clothing (including a shirt that says Mr. Website).
-  </figcaption>
-</figure>
+###### An image illustrating a mental model for thinking about Frontend technologies with HTML as a human's skeleton, JavaScript as the brain & nervous system and CSS as their skin, hair and clothing (including a shirt that says Mr. Website).
 
 - HTML (Skeleton)
   - Your foundational structure for webpages

@@ -34,18 +34,6 @@ export default {
         <a href="/">About</a>
       </p>
       <time>{YEAR}</time> © Andrew Hammond.
-      <style jsx>{`
-        a {
-          float: right;
-          margin-left: 1rem;
-        }
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-          }
-        }
-      `}</style>
     </small>
   ),
   darkMode: true

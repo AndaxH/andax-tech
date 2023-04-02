@@ -16,17 +16,8 @@ Check out https://www.regular-expressions.info/tutorial.html to learn more.
 
 A common application of them is when using the unix command-line utility `grep` (https://en.wikipedia.org/wiki/Grep) to search across files on a computer.
 
-import Image from 'next/image'
+![Photo](/images/grep.png)
 
-<figure>
-<Image
-  src="/images/grep.png"
-  alt="Photo"
-  layout="responsive"
-  width={556}
-  height={384}
-  priority
-  className="next-image"
-/>
-<figcaption>Screenshot of a terminal showing the manual page for the `grep` unix command</figcaption>
+###### Screenshot of a terminal showing the manual page for the `grep` unix command
+
 </figure>
