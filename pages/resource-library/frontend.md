@@ -13,7 +13,9 @@ HTML, [CSS](/resource-library/css) and JavaScript are the core components of use
 
 ![Photo](/images/html-js-css.jpeg)
 
-###### An image illustrating a mental model for thinking about Frontend technologies with HTML as a human's skeleton, JavaScript as the brain & nervous system and CSS as their skin, hair and clothing (including a shirt that says Mr. Website).
+###### An image illustrating a mental model for thinking about Frontend technologies.
+
+###### HTML as a human's skeleton, JavaScript as the brain & nervous system and CSS as their skin & hair & clothing (including a shirt that says Mr. Website)
 
 - HTML (Skeleton)
   - Your foundational structure for webpages
