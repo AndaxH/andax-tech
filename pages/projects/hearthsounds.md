@@ -3,7 +3,6 @@ title: Hearthsounds
 date: 2017/10/18
 description: In-browser Hearthstone card guessing game
 tag: personal project
-author: You
 ---
 
 # Hearthsounds

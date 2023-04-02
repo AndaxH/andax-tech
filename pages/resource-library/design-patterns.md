@@ -3,7 +3,6 @@ title: Design Patterns
 date: 2023-03-14
 description: Tried and true tactics in software development and programming
 tag: software development
-author: You
 ---
 
 # [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)

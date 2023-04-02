@@ -3,7 +3,6 @@ title: Paradigms and Terminology
 date: 2023-03-17
 description: OOP, FP, Lambda, Currying???
 tag: software development
-author: You
 ---
 
 # Paradigms and Terminology

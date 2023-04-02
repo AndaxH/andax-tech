@@ -3,7 +3,6 @@ title: Frontend
 date: 2023-03-20
 description: The technology behind user interfaces and experiences on the web
 tag: web development, frontend, css, javascript, html
-author: You
 ---
 
 # Frontend

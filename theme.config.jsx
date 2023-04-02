@@ -36,5 +36,6 @@ export default {
       <time>{YEAR}</time> © Andrew Hammond.
     </small>
   ),
-  darkMode: true
+  darkMode: true,
+  dateFormatter: (date) => `Last updated on ${date.toDateString()}`
 }

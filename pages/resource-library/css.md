@@ -3,7 +3,6 @@ title: Cascading Style Sheets (CSS)
 date: 2023-03-14
 description: The technology behind styling and layout for the web
 tag: web development, frontend, css
-author: You
 ---
 
 # Cascading Style Sheets (CSS)

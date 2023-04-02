@@ -3,7 +3,6 @@ title: README.md Files
 date: 2023-03-14
 description: A staple of any codebase
 tag: software development
-author: You
 ---
 
 # [README.md Generator](https://github.com/kefranabg/readme-md-generator)

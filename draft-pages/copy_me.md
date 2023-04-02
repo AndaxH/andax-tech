@@ -3,7 +3,6 @@ title: TITLE
 date: 2023-03-17
 description: DESCRIPTION
 tag: frameworks, software development, web development, frontend, backend
-author: You
 ---
 
 # Frameworks

@@ -3,7 +3,6 @@ title: Tools
 date: 2023-03-29
 description: Level up your productivity with mastery of these
 tag: software development
-author: You
 ---
 
 # Tools

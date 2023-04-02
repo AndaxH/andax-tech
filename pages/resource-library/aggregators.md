@@ -3,7 +3,6 @@ title: Aggregators and Courses
 date: 2023-03-14
 description: Comprehensive online resources about software development
 tag: software development
-author: You
 ---
 
 # Aggregators
