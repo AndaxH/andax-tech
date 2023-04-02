@@ -3,7 +3,6 @@ title: Languages
 date: 2023-03-17
 description: How we talk to computers! 🗣
 tag: software development
-author: You
 ---
 
 # Languages

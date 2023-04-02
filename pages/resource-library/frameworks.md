@@ -3,7 +3,6 @@ title: Frameworks
 date: 2023-03-17
 description: Structures you can use to build software
 tag: frameworks, software development, web development, frontend, backend
-author: You
 ---
 
 # Frameworks

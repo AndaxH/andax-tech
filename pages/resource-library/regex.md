@@ -3,7 +3,6 @@ title: Regular Expressions (RegEx)
 date: 2023-03-16
 description: The industry standard for glob and pattern matching
 tag: software development
-author: You
 ---
 
 # Regular Expressions (RegEx)

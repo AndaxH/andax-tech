@@ -3,7 +3,6 @@ title: UI Libraries
 date: 2023-03-14
 description: Cohesive "plug and play" UI components
 tag: web development, frontend
-author: You
 ---
 
 # UI Libraries

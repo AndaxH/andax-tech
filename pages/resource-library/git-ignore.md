@@ -3,7 +3,6 @@ title: Version Control Systems – Git and Friends
 date: 2023-03-14
 description: Keep track of changes to your code
 tag: software development, version control, git
-author: You
 ---
 
 # Version Control Systems (VCS) – Git and Friends

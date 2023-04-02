@@ -3,7 +3,6 @@ title: WoW Board Game App
 date: 2022/05/25
 description: Companion app for a nerdy board game
 tag: personal project
-author: You
 ---
 
 # WoW Board Game App
