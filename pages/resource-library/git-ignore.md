@@ -10,20 +10,9 @@ author: You
 
 ## History of VCS
 
-import Image from 'next/image'
+![Photo](/images/LifeWithoutGit.png)
 
-<figure>
-<Image
-  src="/images/LifeWithoutGit.png"
-  alt="Photo"
-  layout="responsive"
-  width={516}
-  height={274}
-  priority
-  className="next-image"
-/>
-<figcaption>Screenshot of an OSX Finder window showing multiple versions of the same file in a list with names from project, project-2 all the way to project-final-final-this-one-actually and project-final-final-this-one-actually_LAST_ONE</figcaption>
-</figure>
+###### Screenshot of an OSX Finder window showing multiple versions of the same file in a list with names from project, project-2 all the way to project-final-final-this-one-actually and project-final-final-this-one-actually_LAST_ONE
 
 Since we started using computers we needed ways of keeping track of our files and data stored on them. You are probably guilty of the above basic but functional approach to versioning changes to files.
 
