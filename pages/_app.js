@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 import '../styles/main.css'
 
-export default function Nextra({ Component, pageProps }) {
+export default function Nextra(foo) {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export default function Nextra({ Component, pageProps }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <Component {...pageProps} />
+      <foo.Component {...foo.pageProps} />
       <Analytics />
     </>
   )

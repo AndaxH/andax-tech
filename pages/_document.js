@@ -1,8 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { usePageOpts } from 'nextra'
 import { LayoutProps, useBlogContext } from 'nextra-theme-blog'
 
 export default function Document() {
-  const { opts }: LayoutProps = useBlogContext()
+  // const { opts } = useBlogContext()
+  const opts = {}
 
   const meta = {
     title: '👋 Welcome to my little corner of the internet',
@@ -17,30 +19,30 @@ export default function Document() {
         <meta name="robots" content="follow, index" />
         <meta
           name="description"
-          content={opts.frontMatter.description || meta.description}
+          content={opts.frontMatter?.description || meta.description}
         />
         <meta
           property="og:site_name"
-          content={opts.frontMatter.title || meta.title}
+          content={opts.frontMatter?.title || meta.title}
         />
         <meta
           property="og:description"
-          content={opts.frontMatter.description || meta.description}
+          content={opts.frontMatter?.description || meta.description}
         />
         <meta
           property="og:title"
-          content={opts.frontMatter.title || meta.title}
+          content={opts.frontMatter?.title || meta.title}
         />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@AndaxTech" />
         <meta
           name="twitter:title"
-          content={opts.frontMatter.title || meta.title}
+          content={opts.frontMatter?.title || meta.title}
         />
         <meta
           name="twitter:description"
-          content={opts.frontMatter.description || meta.description}
+          content={opts.frontMatter?.description || meta.description}
         />
         <meta name="twitter:image" content={meta.image} />
       </Head>
