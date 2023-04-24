@@ -7,7 +7,7 @@ export default {
   footer: (
     <small style={{ display: 'block', marginTop: '4rem' }}>
       <p>
-        <a href="/projects">Projects</a>
+        <a href="/tags/personal%20project">Projects</a>
       </p>
       <p>
         <a href="/transparency">Vision</a>
