@@ -16,7 +16,7 @@ export default {
         <a href="/gratitude">Gratitude</a>
       </p>
       <p>
-        <a href="/library">Library</a>
+        <a href="/resource-library">Library</a>
       </p>
       <p>
         <a href="/">About</a>
