@@ -1,5 +1,5 @@
 ---
-type: posts
+type: page
 title: Projects
 date: 2000-01-01
 ---
@@ -8,6 +8,6 @@ date: 2000-01-01
 
 Below is a collection of some personal projects I've worked on in the past 😃
 
-The sorting is borked for this ATM 😅 https://github.com/shuding/nextra/issues/1729
-
-Check out https://andax.tech/tags/personal%20project instead
+- [WoW Board Game App](/projects/wow-board-game-app)
+- [Zoom Captions](/projects/zoom-captions)
+- [Hearthsounds](/projects/hearthsounds)
