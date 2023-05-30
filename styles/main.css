@@ -128,3 +128,11 @@ figcaption {
 #scroll-to-top span {
   font-size: xx-large;
 }
+
+table {
+  overflow-x: auto !important
+}
+
+div .nx-flex a[href^="/story"] {
+  display: none !important
+}
