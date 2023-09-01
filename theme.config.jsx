@@ -21,20 +21,14 @@ export default {
       <p>
         <a href="/">About</a>
       </p>
-      <time>{YEAR}</time> © Andrew Hammond.
+      <time>{YEAR}</time> © Andrew Hammond
       <a href="/feed.xml">RSS</a>
       <span>
-        <p>
-          <a href="mailto:hello@andax.tech">📧 Email</a>
-        </p>
         <p>
           <a href="https://www.linkedin.com/in/andrewkhammond/">💼 LinkedIn</a>
         </p>
         <p>
           <a href="https://github.com/AndaxH">🐙 GitHub</a>
-        </p>
-        <p>
-          <a href="https://twitter.com/AndaxTech">🐦 Twitter</a>
         </p>
       </span>
     </small>
