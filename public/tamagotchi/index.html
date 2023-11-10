@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#1f2028" />
+    <title>Tamagotchi</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div>
+        <!-- Cute little Tamagotchi game -->
+        <div class="game-container">
+          <div class="pet-container">
+              <img id="pet" width=640 height=640 src="https://64.media.tumblr.com/a00f00bcd25bab3fd8eb91bdb06929e7/tumblr_phuvtpa19s1uon9hao1_250.gif" alt="Your Pet">
+          </div>
+          <div class="interactions">
+              <button id="feed-button">Feed</button>
+              <button id="clean-button">Clean</button>
+              <button id="play-button">Play</button>
+          </div>
+          <div class="status">
+              <p><strong>Name:</strong> <span id="pet-name">Your Pet</span></p>
+              <p><strong>Happiness:</strong> <span id="happiness">100</span></p>
+              <p><strong>Hunger:</strong> <span id="hunger">0</span></p>
+              <p><strong>Cleanliness:</strong> <span id="cleanliness">100</span></p>
+          </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="tamagotchi.js"></script>
+  </body>
+</html>

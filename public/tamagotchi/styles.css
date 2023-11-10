@@ -1,0 +1,39 @@
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+/* Style the game container */
+.game-container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style the pet container */
+.pet-container {
+  margin: 10px;
+}
+
+/* Style the pet image */
+#pet {
+  width: 150px;
+  height: 150px;
+}
+
+/* Style the interaction buttons */
+.interactions button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Style the status display */
+.status {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Add additional styles as needed */
