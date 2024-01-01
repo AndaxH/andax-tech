@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#1f2028" />
+    <title>Time for Tea</title>
+    <link href="captions.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div>
+        <h1>Tea Randomizer</h1>
+        <h2>Options</h2>
+        <ul id="tea-list"></ul>
+      </div>
+      <div>
+        <h2 id="result-header">You should brew a cuppa of:</h2>
+        <p id="result-text">👀</p>
+        <button id="randomize">Randomize!</button>
+        <button id="yeah-nah" disabled>Yeah nah</button>
+        <div id="checkbox-options">
+          <p>Types</p>
+        <span><input type="checkbox" checked id="black-tea">Black teas</input></span>
+        <span><input type="checkbox" id="herbal-tea">Herbal teas</input></span>
+          <p>Format</p>
+        <span><input type="checkbox" checked id="teabag">Teabag</input></span>
+        <span><input type="checkbox" checked id="loose-leaf">Loose leaf</input></span>
+      </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="tea.js"></script>
+  </body>
+</html>
