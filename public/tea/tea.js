@@ -1,6 +1,7 @@
 const TEA_OPTIONS = [
   {
     name: 'Melbourne Breakfast',
+    description: 'Black tea w/ vanilla',
     teabag: true,
     loose: true,
     black: true,
@@ -8,6 +9,7 @@ const TEA_OPTIONS = [
   },
   {
     name: 'New York Breakfast',
+    description: 'Black tea w/ cinnamon',
     teabag: false,
     loose: true,
     black: true,
@@ -15,6 +17,8 @@ const TEA_OPTIONS = [
   },
   {
     name: 'Canberra Breakfast',
+    description:
+      'Black tea w/ cinnamon & coconut (tastes like an anzac biscuit)',
     teabag: false,
     loose: true,
     black: true,
@@ -31,11 +35,12 @@ const TEA_OPTIONS = [
     name: 'Chai',
     teabag: false,
     loose: true,
-    black: true,
-    herbal: false
+    black: false,
+    herbal: true
   },
   {
     name: 'New York Breakfast (fancy)',
+    description: 'Black tea w/ vanilla & chocolate (malty sweetness)',
     teabag: false,
     loose: true,
     black: true,
@@ -43,6 +48,7 @@ const TEA_OPTIONS = [
   },
   {
     name: 'Tea Tonic Assorted Tin',
+    description: 'It might be blue 😱',
     teabag: true,
     loose: false,
     black: true,
@@ -50,6 +56,7 @@ const TEA_OPTIONS = [
   },
   {
     name: 'Black Tea Bag (Generic)',
+    description: 'something breakfast (purchased on sale, probably)',
     teabag: true,
     loose: false,
     black: true,
@@ -64,6 +71,7 @@ const TEA_OPTIONS = [
   },
   {
     name: 'Potency',
+    description: 'Japanese white tea',
     teabag: false,
     loose: true,
     black: false,
@@ -80,15 +88,16 @@ const TEA_OPTIONS = [
     name: 'Chocolate Coconut Chai',
     teabag: false,
     loose: true,
-    black: true,
-    herbal: false
+    black: false,
+    herbal: true
   }
 ]
 
 const main = () => {
   const randomizeButton = document.getElementById('randomize')
   const yeahNahButton = document.getElementById('yeah-nah')
-  const optionsList = document.getElementById('tea-list')
+  const blackTeaList = document.getElementById('black-tea-list')
+  const herbalTeaList = document.getElementById('herbal-tea-list')
   const resultText = document.getElementById('result-text')
   const blackTeaCheckbox = document.getElementById('black-tea')
   const herbalTeaCheckbox = document.getElementById('herbal-tea')
@@ -97,10 +106,41 @@ const main = () => {
 
   let lastTeaResult
 
-  TEA_OPTIONS.forEach((tea) => {
+  const blackTeaOptions = TEA_OPTIONS.filter((tea) => tea.black).sort((a, b) =>
+    a.name.localeCompare(b.name)
+  )
+  const herbalTeaOptions = TEA_OPTIONS.filter((tea) => tea.herbal).sort(
+    (a, b) => a.name.localeCompare(b.name)
+  )
+
+  blackTeaOptions.forEach((tea) => {
     const teaOption = document.createElement('li')
+    let teaOptionDescription
     teaOption.innerText = tea.name
-    optionsList.appendChild(teaOption)
+    if (tea.description) {
+      teaOptionDescription = document.createElement('li')
+      teaOptionDescription.classList.add('tea-description')
+      teaOptionDescription.innerText = tea.description
+    }
+    blackTeaList.appendChild(teaOption)
+    if (teaOptionDescription) {
+      blackTeaList.appendChild(teaOptionDescription)
+    }
+  })
+
+  herbalTeaOptions.forEach((tea) => {
+    const teaOption = document.createElement('li')
+    let teaOptionDescription
+    teaOption.innerText = tea.name
+    if (tea.description) {
+      teaOptionDescription = document.createElement('li')
+      teaOptionDescription.classList.add('tea-description')
+      teaOptionDescription.innerText = tea.description
+    }
+    herbalTeaList.appendChild(teaOption)
+    if (teaOptionDescription) {
+      herbalTeaList.appendChild(teaOptionDescription)
+    }
   })
 
   const generateResultText = (differentTea) => {
