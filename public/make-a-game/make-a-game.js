@@ -232,7 +232,11 @@ const main = () => {
     characterOption =
       CHARACTER_OPTIONS[Math.floor(Math.random() * CHARACTER_OPTIONS.length)]
 
-    resultText.innerText = `🎮 ${genreOptionName} game with ${themeOption.name.toLowerCase()} ${characterOption.name.toLowerCase()}!`
+    resultText.innerText = `🎮 ${genreOptionName} game with ${
+      Math.random() > 0.5
+        ? `${themeOption.name.toLowerCase()} ${characterOption.name.toLowerCase()}`
+        : characterOption.name.toLowerCase()
+    }!`
   }
 
   randomizeButton.addEventListener('click', () => {
