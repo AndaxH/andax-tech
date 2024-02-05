@@ -15,29 +15,29 @@ const GENRE_OPTIONS = [
         link: 'https://en.wikipedia.org/wiki/List_of_maze_video_games'
       },
       { name: 'Stealth' },
-      { name: 'Hack & slash' }
+      { name: 'Hack & Slash' }
     ]
   },
   {
     name: 'Adventure',
     subGenres: [
       {
-        name: 'Interactive fiction',
+        name: 'Interactive Fiction',
         link: 'https://en.wikipedia.org/wiki/Interactive_fiction'
       },
       {
-        name: 'Point & click',
+        name: 'Point & Click',
         link: 'https://en.wikipedia.org/wiki/Point-and-click_adventure_game'
       },
       {
-        name: 'Visual novel',
+        name: 'Visual Novel',
         link: 'https://en.wikipedia.org/wiki/Visual_novel'
       },
       {
-        name: 'Walking simulator',
+        name: 'Walking Simulator',
         link: 'https://en.wikipedia.org/wiki/Walking_simulator'
       },
-      { name: 'Escape room' }
+      { name: 'Escape Room' }
     ]
   },
   {
@@ -58,7 +58,7 @@ const GENRE_OPTIONS = [
   {
     name: 'Role-Playing Game (RPG)',
     subGenres: [
-      { name: 'Dungeon crawl' },
+      { name: 'Dungeon Crawl' },
       { name: 'Monster-taming' },
       { name: 'Tactical' }
     ]
@@ -74,7 +74,7 @@ const GENRE_OPTIONS = [
       { name: 'Underwater' },
       { name: 'Train' },
       { name: 'Vehicular Combat' },
-      { name: 'City builder' },
+      { name: 'City Builder' },
       { name: 'Life' }
     ]
   },
@@ -94,7 +94,7 @@ const GENRE_OPTIONS = [
         link: 'https://en.wikipedia.org/wiki/Real-time_strategy'
       },
       {
-        name: 'Tower defense',
+        name: 'Tower Defense',
         link: 'https://en.wikipedia.org/wiki/Tower_defense'
       },
       {
