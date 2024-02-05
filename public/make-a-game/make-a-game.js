@@ -1,95 +1,39 @@
-const TEA_OPTIONS = [
+const GENRE_OPTIONS = [
   {
-    name: 'Melbourne Breakfast',
-    description: 'Black tea w/ vanilla',
-    teabag: true,
-    loose: true,
-    black: true,
-    herbal: false
+    name: 'Arcade'
   },
   {
-    name: 'New York Breakfast',
-    description: 'Black tea w/ cinnamon',
-    teabag: false,
-    loose: true,
-    black: true,
-    herbal: false
+    name: 'Action'
+    subGenres: []
   },
   {
-    name: 'Canberra Breakfast',
-    description:
-      'Black tea w/ cinnamon & coconut (tastes like an anzac biscuit)',
-    teabag: false,
-    loose: true,
-    black: true,
-    herbal: false
+    name: 'Adventure'
   },
   {
-    name: 'Peppermint',
-    teabag: true,
-    loose: false,
-    black: false,
-    herbal: true
+    name: 'Racing'
   },
   {
-    name: 'Chai',
-    teabag: false,
-    loose: true,
-    black: false,
-    herbal: true
+    name: 'Role-Playing Game (RPG)'
   },
   {
-    name: 'New York Breakfast (fancy)',
-    description: 'Black tea w/ vanilla & chocolate (malty sweetness)',
-    teabag: false,
-    loose: true,
-    black: true,
-    herbal: false
+    name: 'Simulation'
   },
   {
-    name: 'Tea Tonic Assorted Tin',
-    description: 'It might be blue 😱',
-    teabag: true,
-    loose: false,
-    black: true,
-    herbal: true
+    name: 'Sports'
   },
   {
-    name: 'Black Tea Bag (Generic)',
-    description: 'something breakfast (purchased on sale, probably)',
-    teabag: true,
-    loose: false,
-    black: true,
-    herbal: false
+    name: 'Strategy'
   },
   {
-    name: 'Green Tea Bag (Generic)',
-    teabag: true,
-    loose: false,
-    black: false,
-    herbal: true
+    name: 'Shooter'
+    subGenres: [{ name: "Arena", link: "https://en.wikipedia.org/wiki/Arena_shooter" }, "First-person", "Hero", "Shoot 'em up (Bullet hell)", "Tactical", "Third-person"]
   },
   {
-    name: 'Potency',
-    description: 'Japanese white tea',
-    teabag: false,
-    loose: true,
-    black: false,
-    herbal: true
+    name: 'Platformer',
+    link: 'https://en.wikipedia.org/wiki/Platformer'
   },
   {
-    name: 'Lemongrass Berry',
-    teabag: false,
-    loose: true,
-    black: false,
-    herbal: true
-  },
-  {
-    name: 'Chocolate Coconut Chai',
-    teabag: false,
-    loose: true,
-    black: false,
-    herbal: true
+    name: 'Chocolate Coconut Chai'
   }
 ]
 
