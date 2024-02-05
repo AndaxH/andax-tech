@@ -22,6 +22,11 @@ const nextraExportsPlus = {
         source: '/zoom-captions',
         destination: '/zoom-captions/index.html',
         permanent: true
+      },
+      {
+        source: '/make-a-game',
+        destination: '/make-a-game/index.html',
+        permanent: true
       }
     ]
   }
