@@ -4,25 +4,52 @@ const GENRE_OPTIONS = [
   },
   {
     name: 'Action'
-    subGenres: []
+    subGenres: [{ name: "Beat 'em up", link: "https://en.wikipedia.org/wiki/Beat_%27em_up" },
+    { name: "Fighting", link: "https://en.wikipedia.org/wiki/Fighting_game" },
+    { name: "Maze", link: "https://en.wikipedia.org/wiki/List_of_maze_video_games" },
+    { name: "Stealth" }, 
+    { name: "Hack and slash" },
+  ]
   },
   {
-    name: 'Adventure'
+    name: 'Adventure',
+    subGenres: [
+      { name: "Interactive fiction", link: "https://en.wikipedia.org/wiki/Interactive_fiction" },
+      { name: "Point and click", link: "https://en.wikipedia.org/wiki/Point-and-click_adventure_game" },
+      { name: "Visual novel", link: "https://en.wikipedia.org/wiki/Visual_novel" },
+      { name: "Walking simulator", link: "https://en.wikipedia.org/wiki/Walking_simulator" },
+      { name: "Escape room" }
+    ]
+  },
+  {
+    name: 'Roguelike Deckbuilder',
+  },
+  {
+    name: 'Roguelike',
+  },
+  {
+    name: 'Roguelite',
+  },
+  {
+    name: 'Horror',
   },
   {
     name: 'Racing'
   },
   {
-    name: 'Role-Playing Game (RPG)'
+    name: 'Role-Playing Game (RPG)',
+    subGenres: [{ name: "Dungeon crawl" }, { name: "Monster-taming"}, { name: "Tactical"}]
   },
   {
     name: 'Simulation'
+    subGenres: [{ name: "Fishing " }, { name: "Racing" }, { name: "Flight" }, { name: "Space" }, { name: "Underwater" }, { name: "Train" }, { name: "Vehicular Combat" }, { name: "City builder" }, { name: "Life" }]
   },
   {
     name: 'Sports'
   },
   {
     name: 'Strategy'
+    subGenres: [{ name: "4X", link: "https://en.wikipedia.org/wiki/4X" }, { name: "Auto battler", link: "https://en.wikipedia.org/wiki/Auto_battler" }, { name: "Real-time", link: "https://en.wikipedia.org/wiki/Real-time_strategy" }, { name: "Tower defense", link: "https://en.wikipedia.org/wiki/Tower_defense" }, { name: "Turn-based", link: "https://en.wikipedia.org/wiki/Turn-based_strategy" }, { name: "Grand", link: "https://en.wikipedia.org/wiki/Wargame" }]
   },
   {
     name: 'Shooter'
@@ -33,9 +60,67 @@ const GENRE_OPTIONS = [
     link: 'https://en.wikipedia.org/wiki/Platformer'
   },
   {
-    name: 'Chocolate Coconut Chai'
-  }
+    name: 'Actions Role-Playing Game (ARPG)'
+    subGenres: [{ name: "Diablo-like", link: "https://en.wikipedia.org/wiki/Diablo_clone" }, { name: "Soulslike" }, { name: "Looter shooter " }]
+  },
+  { name: "Rhythm" },
+  { name: "Puzzle" }
 ]
+
+const THEME_OPTIONS = [
+  { name: "Fantasy" },
+  { name: "Sci-fi" },
+  { name: "Comedy" },
+  { name: "Romance" },
+  { name: "Historical" },
+  { name: "Western" },
+  { name: "Cyberpunk" },
+  { name: "Steampunk" },
+  { name: "Post-apocalyptic" },
+  { name: "Survival" },
+  { name: "Superhero" },
+  { name: "Martial arts" },
+  { name: "Military" },
+  { name: "Spiritual" }
+]
+
+const CHARACTER_OPTIONS = [
+  { name: "Humans" },
+  { name: "Elves" },
+  { name: "Dwarves" },
+  { name: "Orcs" },
+  { name: "Goblins" },
+  { name: "Trolls" },
+  { name: "Giants" },
+  { name: "Dragons" },
+  { name: "Fairies" },
+  { name: "Mermaids" },
+  { name: "Vampires" },
+  { name: "Werewolves" },
+  { name: "Zombies" },
+  { name: "Robots" },
+  { name: "Aliens" },
+  { name: "Mutants" },
+  { name: "Monsters" },
+  { name: "Animals" },
+  { name: "Plants" },
+  { name: "Inanimate objects" },
+  { name: "Mythical creatures" },
+  { name: "Gods" },
+  { name: "Demons" },
+  { name: "Angels" },
+  { name: "Spirits" },
+  { name: "Ghosts" },
+  { name: "Psychics" },
+  { name: "Time travelers" },
+  { name: "Clones" },
+  { name: "Androids" },
+  { name: "Cyborgs" },
+  { name: "Artificial intelligence" },
+  { name: "Aliens" }
+]
+
+const GAME_MECHANIC_OPTIONS = [];
 
 const main = () => {
   const randomizeButton = document.getElementById('randomize')
