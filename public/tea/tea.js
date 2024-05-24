@@ -47,14 +47,6 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'Tea Tonic Assorted Tin',
-    description: 'It might be blue 😱',
-    teabag: true,
-    loose: false,
-    black: true,
-    herbal: true
-  },
-  {
     name: 'Black Tea Bag (Generic)',
     description: 'something breakfast (purchased on sale, probably)',
     teabag: true,
