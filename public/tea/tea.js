@@ -32,13 +32,6 @@ const TEA_OPTIONS = [
     herbal: true
   },
   {
-    name: 'Chai',
-    teabag: false,
-    loose: true,
-    black: false,
-    herbal: true
-  },
-  {
     name: 'New York Breakfast (fancy)',
     description: 'Black tea w/ vanilla & chocolate (malty sweetness)',
     teabag: false,
