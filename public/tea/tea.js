@@ -82,6 +82,34 @@ const TEA_OPTIONS = [
     loose: true,
     black: false,
     herbal: true
+  },
+  {
+    name: 'Earl Grey',
+    teabag: true,
+    loose: false,
+    black: true,
+    herbal: false
+  },
+  {
+    name: 'Cranberry & Pomegranate',
+    teabag: true,
+    loose: false,
+    black: false,
+    herbal: true
+  },
+  {
+    name: 'Red Green & Dreamy (Rooibos)',
+    teabag: false,
+    loose: true,
+    black: false,
+    herbal: true
+  },
+  {
+    name: 'Imperial Coconut Cream',
+    teabag: false,
+    loose: true,
+    black: true,
+    herbal: false
   }
 ]
 
