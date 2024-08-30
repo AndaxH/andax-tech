@@ -10,9 +10,6 @@ export default {
         <a href="/tags/personal%20project">Projects</a>
       </p>
       <p>
-        <a href="/transparency">Vision</a>
-      </p>
-      <p>
         <a href="/gratitude">Gratitude</a>
       </p>
       <p>
