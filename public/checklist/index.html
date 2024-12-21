@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#1f2028" />
+    <title>Daily checklist</title>
+    <link href="checklist.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div>
+        <div id="checkbox-options">
+          <h3>Morning</h3>
+            <label><input type="checkbox" id="tea"> 🫖 Have a cuppa</input></label>
+            <label><input type="checkbox" id="emails"> 📧 Check emails</input></label>
+            <label><input type="checkbox" id="plan"> 📆 Check calendar and plan the day</input></label>
+            <label><input type="checkbox" id="breakfast"> 🍳 Eat something to start the day with energy</input></label>
+          <h3>Afternoon</h3>
+            <label><input type="checkbox" id="lunch"> 🍔 Lunch</input></label>
+            <label><input type="checkbox" id="coffee"> ☕️ Fika</input></label>
+            <label><input type="checkbox" id="nap"> 💤 Have a nap if needed</input></label>
+          <h3>Evening</h3>
+            <label><input type="checkbox" id="dinner"> 🍕 Dinner</input></label>
+            <label><input type="checkbox" id="budget"> 💸 Fill out spending spreadsheet</input></label>
+            <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="checklist.js"></script>
+  </body>
+</html>

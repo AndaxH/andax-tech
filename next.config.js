@@ -9,6 +9,11 @@ const nextraExportsPlus = {
   async redirects() {
     return [
       {
+        source: '/checklist',
+        destination: '/checklist/index.html',
+        permanent: true
+      },
+      {
         source: '/tea',
         destination: '/tea/index.html',
         permanent: true
