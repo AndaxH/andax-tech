@@ -14,6 +14,11 @@ const nextraExportsPlus = {
         permanent: true
       },
       {
+        source: '/verses',
+        destination: '/verses/index.html',
+        permanent: true
+      },
+      {
         source: '/tea',
         destination: '/tea/index.html',
         permanent: true
