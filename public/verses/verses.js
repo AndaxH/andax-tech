@@ -246,6 +246,40 @@ const main = () => {
     }
     getRandomVerse();
     randomVerseButton.addEventListener('click', getRandomVerse)
+
+    const randomProverbButton = document.getElementById('random-proverb')
+    const proverbsReference = document.getElementById('proverbs-reference')
+    const proverbsText = document.getElementById('proverbs-text')
+    const loader = document.getElementById('loader')
+
+    const getRandomProverb = async () => {
+        if (loader.style.display === 'none') {
+            loader.style.display = 'block'
+            proverbsReference.textContent = ''
+            proverbsText.textContent = ''
+        }
+        const PROVERBS_BOOK_ID = "PRO"
+        const bibleApi = `https://bible-api.com/data/web/random/${PROVERBS_BOOK_ID}`;
+        const response = await fetch(bibleApi);
+        const json = await response.json();
+        // {
+        //     "translation": {
+        //       ...
+        //     },
+        //     "random_verse": {
+        //       "book_id": "PRO",
+        //       "book": "Proverbs",
+        //       "chapter": 21,
+        //       "verse": 7,
+        //       "text": "The violence of the wicked will drive them away,\nbecause they refuse to do what is right.\n"
+        //     }
+        // }
+        loader.style.display = 'none'
+        proverbsReference.textContent = `${json.random_verse.book} ${json.random_verse.chapter}:${json.random_verse.verse}`
+        proverbsText.textContent = json.random_verse.text
+    }
+    getRandomProverb();
+    randomProverbButton.addEventListener('click', getRandomProverb);
 }
 
 main();
