@@ -55,14 +55,7 @@ const TEA_OPTIONS = [
     herbal: true
   },
   {
-    name: 'Lemongrass Berry',
-    teabag: false,
-    loose: true,
-    black: false,
-    herbal: true
-  },
-  {
-    name: 'Sticky Chai',
+    name: '(Lemongrass) Bamboo Berry',
     teabag: false,
     loose: true,
     black: false,
@@ -76,14 +69,29 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'Cranberry & Pomegranate',
+    name: 'Orange & Cinnamon',
     teabag: true,
     loose: false,
     black: false,
     herbal: true
   },
   {
-    name: 'Red Green & Dreamy (Rooibos)',
+    name: 'Apple Almond Danish',
+    teabag: false,
+    loose: true,
+    black: false,
+    herbal: true
+  },
+  {
+    name: 'Lemongrass & Ginger',
+    teabag: false,
+    loose: true,
+    black: false,
+    herbal: true
+  },
+  {
+    name: 'Sleep Well',
+    description: 'Chamomile, Orange Blossom & Honey',
     teabag: false,
     loose: true,
     black: false,
