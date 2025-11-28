@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
@@ -26,6 +28,12 @@
   "devDependencies": {
     "@types/node": "20.2.1",
     "@types/react": "^18.2.6",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^13.4.3",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^5.0.4"
   }
 }

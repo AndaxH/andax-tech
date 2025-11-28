@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { LayoutProps } from 'nextra-theme-blog'
 
 export default function Document() {
   const meta = {

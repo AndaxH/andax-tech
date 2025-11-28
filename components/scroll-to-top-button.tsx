@@ -1,21 +1,24 @@
-import React from 'react'
-import { scrollToTop } from '../util/scroll-to-top'
+import React, { useEffect, useState } from 'react'
+import { scrollToTop } from '@/util/scroll-to-top'
 
 const ScrollToTopButton = () => {
-  if (typeof document !== 'undefined') {
-    // Find a CSS solution instead
-    if (document.querySelector('body').scrollHeight < 1000) {
-      return null
-    }
+  const [showButton, setShowButton] = useState(false)
 
-    return (
-      <button id="scroll-to-top" onClick={scrollToTop}>
-        Scroll back to <span>🔝</span>
-      </button>
-    )
-  } else {
+  useEffect(() => {
+    if (document.body.scrollHeight > 1000) {
+      setShowButton(true)
+    }
+  }, [])
+
+  if (!showButton) {
     return null
   }
+
+  return (
+    <button id="scroll-to-top" onClick={scrollToTop}>
+      Scroll back to <span>🔝</span>
+    </button>
+  )
 }
 
 export { ScrollToTopButton }

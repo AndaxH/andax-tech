@@ -201,15 +201,11 @@ const CHARACTER_OPTIONS = [
   { name: 'Monkeys' }
 ]
 
-const GAME_MECHANIC_OPTIONS = []
-
 const main = () => {
-  console.log('main')
   const randomizeButton = document.getElementById('randomize')
   const resultText = document.getElementById('result-text')
 
   const generateResultText = () => {
-    console.log('hello')
     let genreOption
     let genreOptionName
     let themeOption

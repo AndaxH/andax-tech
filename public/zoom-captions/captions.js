@@ -56,7 +56,7 @@ const main = () => {
   });
 
   skipCaptionButton.addEventListener("click", () => {
-    lastCaption = splitText.shift();
+    const lastCaption = splitText.shift();
     skippedOrSentCaptions.push(lastCaption);
     generatePreviewText();
   });

@@ -1,8 +1,8 @@
-import { ScrollToTopButton } from './components/scroll-to-top-button'
+import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 
 const YEAR = new Date().getFullYear()
 
-export default {
+const config = {
   postFooter: <ScrollToTopButton />,
   footer: (
     <small style={{ display: 'block', marginTop: '4rem' }}>
@@ -33,3 +33,5 @@ export default {
   darkMode: true,
   dateFormatter: (date) => `Last updated on ${date.toDateString()}`
 }
+
+export default config
