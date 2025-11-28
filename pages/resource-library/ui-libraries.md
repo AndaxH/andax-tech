@@ -17,6 +17,14 @@ You can think of them as providing a set of primitives that you can then use as 
 
 > Atlassian's official UI library, built according to the Atlassian Design System.
 
+## [shadcn](https://ui.shadcn.com/)
+
+> A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.
+
+## [Aceternity](https://ui.aceternity.com/components)
+
+> Discover how leading companies leverage Aceternity UI to create stunning landing pages and powerful web applications
+
 ## [MUI](https://mui.com/)
 
 > MUI offers a comprehensive suite of UI tools to help you ship new features faster. Start with Material UI, our fully-loaded component library, or bring your own design system to our production-ready components.
