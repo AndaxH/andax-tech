@@ -1,8 +1,9 @@
 {
   "private": true,
+  "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev --webpack",
     "build": "node ./scripts/gen-rss.js && next build",
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
