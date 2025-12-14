@@ -22,6 +22,9 @@ const config = {
       <a href="/feed.xml">RSS</a>
       <span>
         <p>
+          <a href="https://x.com/AndaxTech">🐦 Twitter</a>
+        </p>
+        <p>
           <a href="https://www.linkedin.com/in/andrewkhammond/">💼 LinkedIn</a>
         </p>
         <p>
