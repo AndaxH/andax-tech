@@ -1,4 +1,6 @@
-const withNextra = require('nextra')({
+import nextra from 'nextra'
+
+const withNextra = nextra({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.jsx'
 })
@@ -74,4 +76,4 @@ const nextraExportsPlus = {
   }
 }
 
-module.exports = nextraExportsPlus
+export default nextraExportsPlus
