@@ -69,6 +69,12 @@ VS Code but forked for AI use-cases.
 
 https://vercel.com/blog/v0-app
 
+### [Ollama](https://ollama.com/)
+
+> Chat & build with open models
+
+Download popular AI models and run them locally on your own hardware.
+
 ### [Lovable](https://lovable.dev/)
 
 > Create apps and websites by chatting with AI
