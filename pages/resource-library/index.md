@@ -16,4 +16,4 @@ Since then I've only had more people over the years reach out, hence the creatio
 
 Included are a few pages about personal projects I've worked on in the past.
 
-Check out the pages and links below that make up the resource library itself 👀
+Updated sporadically, check out the pages and links below that make up the resource library itself 👀
