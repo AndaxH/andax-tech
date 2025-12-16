@@ -1,11 +1,15 @@
 ---
 title: Tools
-date: 2023-03-29
+date: 2025-12-16
 description: Level up your productivity with mastery of these
 tag: software development
 ---
 
 # Tools
+
+## [AI native Tools](/resource-library/ai)
+
+For everything with AI bells and whistles check out the library entry for [Artificial Intelligence](/resource-library/ai).
 
 ## [Loom](https://www.loom.com/)
 
