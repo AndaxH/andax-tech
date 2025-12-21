@@ -7,14 +7,6 @@ tag: software development, reading, engineering management, culture
 
 # Reading / Viewing List – Culture & Engineering Management
 
-## [Atlassian Core Values](https://www.youtube.com/watch?v=8xiwyk3ouuI)
-
-> Atlassian's core values, that shape our company, products, and hiring. Every day.
-
-## [ShipIt - Inside the Atlassian (24 hour hackathon) ritual](https://www.youtube.com/watch?v=zgFNTNYJlUk)
-
-> ShipIt is a huge part of Atlassian and is one of the key ways we create an open sourced culture of collaboration and innovation. Find out what it is and why Atlassians rave about this thing called ShipIt.
-
 ## [Coordination Headwind – How Tech Organisations are like slime molds](https://komoroske.com/slime-mold/)
 
 A great breakdown of how tech companies strengths are in their bottoms up structure from a previous senior leader at Google
@@ -26,6 +18,11 @@ Foundational aspects of being successful as a manager
 ## [Being Glue](https://noidea.dog/glue)
 
 > Your job title says "software engineer", but you seem to spend most of your time in meetings. You'd like to have time to code, but nobody else is onboarding the junior engineers, updating the roadmap, talking to the users, noticing the things that got dropped, asking questions on design documents, and making sure that everyone's going roughly in the same direction. If you stop doing those things, the team won't be as successful. But now someone's suggesting that you might be happier in a less technical role. If this describes you, congratulations: you're the glue. If it's not, have you thought about who is filling this role on your team?
+
+## [Team Collaboration](/resource-library/team-collaboration)
+
+A bunch of useful resources for specifically working in teams.
+
 
 ## [Twitter Thread - Layerinitis](https://threadreaderapp.com/thread/1477399261700526080.html)
 
@@ -76,3 +73,12 @@ Exploring the benefits of working both as an Individual Contributor and Manager 
 ## [11 Principles of Engineering Management](https://acjay.com/2022/03/11/11-principles-of-engineering-management/)
 
 > ... decided to try to create a brief, digestible manual on the expectations of management for senior engineers at my company who are considering making the shift.
+
+## [Atlassian Core Values](https://www.youtube.com/watch?v=8xiwyk3ouuI)
+
+> Atlassian's core values, that shape our company, products, and hiring. Every day.
+
+## [ShipIt - Inside the Atlassian (24 hour hackathon) ritual](https://www.youtube.com/watch?v=zgFNTNYJlUk)
+
+> ShipIt is a huge part of Atlassian and is one of the key ways we create an open sourced culture of collaboration and innovation. Find out what it is and why Atlassians rave about this thing called ShipIt.
+

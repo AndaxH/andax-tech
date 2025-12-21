@@ -15,6 +15,10 @@ Especially earlier in your career it's a good to reflect on being a T-Shaped Eng
 
 There are different flavours of Software Engineer, especially at the more senior levels and it can be helpful to reflect on the type of engineer you identify with
 
+### [Frontend Engineer Archetypes](https://cpojer.net/posts/frontend-engineering-archetypes)
+
+Similar to the above but specifically focused on FE.
+
 ## [Ring Theory](<https://en.wikipedia.org/wiki/Ring_theory_(psychology)>)
 
 > Ring theory is a concept or paradigm in psychology that recommends a strategy for dealing with the stress a person may feel when someone they encounter, know or love is undergoing crisis.
