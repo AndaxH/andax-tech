@@ -1,5 +1,5 @@
 ---
-title: Zoom Captions
+title: Personal Project - Zoom Captions
 date: 2020/05/14
 description: Sending captions line by line to Zoom made easy
 tag: personal project

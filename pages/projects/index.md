@@ -12,3 +12,4 @@ Below is a collection of some personal projects I've worked on in the past 😃
 - [Zoom Captions](/projects/zoom-captions)
 - [Hearthsounds](/projects/hearthsounds)
 - [Tea Randomizer](/projects/tea)
+- [Stocks Earnings Calendar](/projects/stocks)

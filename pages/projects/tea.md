@@ -1,6 +1,6 @@
 ---
-title: Tea Randomizer
-date: 2025/12/21
+title: Personal Project - Tea Randomizer
+date: 2024/01/26
 description: Helping guests pick their cuppa
 tag: personal project
 ---
