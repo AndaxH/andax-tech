@@ -11,3 +11,4 @@ Below is a collection of some personal projects I've worked on in the past 😃
 - [WoW Board Game App](/projects/wow-board-game-app)
 - [Zoom Captions](/projects/zoom-captions)
 - [Hearthsounds](/projects/hearthsounds)
+- [Tea Randomizer](/projects/tea)
