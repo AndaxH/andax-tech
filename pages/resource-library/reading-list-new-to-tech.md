@@ -1,6 +1,6 @@
 ---
 title: Reading List – New to Tech
-date: 2023-04-24
+date: 2025-12-21
 description: Articles aimed at those starting out in tech
 tag: software development, reading
 ---

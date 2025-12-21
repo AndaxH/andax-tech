@@ -1,6 +1,6 @@
 ---
 title: Team Collaboration
-date: 2023-04-09
+date: 2025-12-21
 description: No man is an island, resources for working with others
 tag: software development
 ---

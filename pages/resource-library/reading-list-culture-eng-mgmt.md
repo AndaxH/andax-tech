@@ -1,6 +1,6 @@
 ---
 title: Reading / Viewing List – Culture & Engineering Management
-date: 2023-04-24
+date: 2025-12-21
 description: Recommended articles for those interested in tech culture and engineering management.
 tag: software development, reading, engineering management, culture
 ---
