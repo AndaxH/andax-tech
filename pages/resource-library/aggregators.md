@@ -5,8 +5,6 @@ description: Comprehensive online resources about software development
 tag: software development
 ---
 
-# Aggregators
-
 There's a number of excellent resources online that act as aggregators which have put together
 collections of useful topics to then explore more deeply.
 
@@ -18,7 +16,7 @@ a tech, business newsletter written by [@benthompson](https://twitter.com/bentho
 
 > roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide the developers in picking up the path and guide their learnings.
 
-What's also cool is that the entire site is [open source](https://en.wikipedia.org/wiki/Open_source) on GitHub: https://github.com/kamranahmedse/developer-roadmap
+What's also cool is that the entire site is [open source](https://en.wikipedia.org/wiki/Open_source) on GitHub: <https://github.com/kamranahmedse/developer-roadmap>
 
 ## [Grok Learning](https://groklearning.com/)
 

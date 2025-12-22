@@ -1,11 +1,11 @@
 ---
 title: Reading List – New to Tech
-date: 2025-12-21
+date: 2025-12-23
 description: Articles aimed at those starting out in tech
 tag: software development, reading
 ---
 
-# Reading List – New to Tech
+In case you missed it from the library directory, here's a collection of resources I put together when I first made the switch to working as a Software Developer <https://medium.com/@andaxhambert/so-you-want-to-become-a-software-developer-collection-of-tech-training-resources-6ba52b299cd9>
 
 ## [Software Engineer Qualification Levels](https://www.altexsoft.com/blog/business/software-engineer-qualification-levels-junior-middle-and-senior/)
 
@@ -23,7 +23,7 @@ Early in your career you will want to focus on building your breadth of skills b
 
 > roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide the developers in picking up the path and guide their learnings.
 
-What's also cool is that the entire site is [open source](https://en.wikipedia.org/wiki/Open_source) on GitHub: https://github.com/kamranahmedse/developer-roadmap
+What's also cool is that the entire site is [open source](https://en.wikipedia.org/wiki/Open_source) on GitHub: <https://github.com/kamranahmedse/developer-roadmap>
 
 ## [Hello World eBook from Atlassian](https://www.atlassian.com/blog/wp-content/uploads/HelloWorldEbook.pdf)
 
@@ -31,5 +31,5 @@ What's also cool is that the entire site is [open source](https://en.wikipedia.o
 
 ## [YouTube](https://www.youtube.com/)
 
-There are thousands upon thousands of hours of quality video content all about software engineering online. Just try searching some 
+There are thousands upon thousands of hours of quality video content all about software engineering online. Just try searching some
 topics that you're interested in. Often conference talks are recorded and available online as well.
