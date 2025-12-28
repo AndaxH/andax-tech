@@ -1,6 +1,6 @@
 ---
 title: Design Patterns
-date: 2023-03-14
+date: 2025-12-28
 description: Tried and true tactics in software development and programming
 tag: software development
 ---
@@ -9,7 +9,7 @@ tag: software development
 
 > In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design.
 
-https://en.wikipedia.org/wiki/Software_design_pattern
+<https://en.wikipedia.org/wiki/Software_design_pattern>
 
 If you're new to the world of software development and interested in this space, definitely check out
 [Reading List – New to Tech](/resource-library/reading-list-new-to-tech)
