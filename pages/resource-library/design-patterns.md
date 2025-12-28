@@ -11,6 +11,9 @@ tag: software development
 
 https://en.wikipedia.org/wiki/Software_design_pattern
 
+If you're new to the world of software development and interested in this space, definitely check out
+[Reading List – New to Tech](/resource-library/reading-list-new-to-tech)
+
 ## [Refactoring Guru](https://refactoring.guru/)
 
 > Refactoring.Guru makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.
