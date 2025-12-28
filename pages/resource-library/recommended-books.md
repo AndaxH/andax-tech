@@ -5,8 +5,6 @@ description: Recommended books for those working in tech, especially in a team l
 tag: software development, reading, engineering management
 ---
 
-# Recommended Books
-
 ## [Extreme Ownership](https://amzn.to/3ZVwHRB)
 
 > How U.S. Navy Seals Lead and Win

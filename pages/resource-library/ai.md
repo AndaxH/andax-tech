@@ -19,8 +19,6 @@ tag: software development, ai
   </figcaption>
 </figure>
 
-# Artificial Intelligence
-
 ## [Open AI](https://openai.com/)
 
 Initial front runners of AI development, the company behind GPT models.
@@ -67,7 +65,7 @@ VS Code but forked for AI use-cases.
 
 > The AI builder for everyone
 
-https://vercel.com/blog/v0-app
+<https://vercel.com/blog/v0-app>
 
 ### [Ollama](https://ollama.com/)
 
