@@ -5,8 +5,6 @@ description: Companion app for a nerdy board game
 tag: personal project
 ---
 
-# WoW Board Game App
-
 Me and a bunch of mates from work are big fans of classic Blizzard games. This includes World of Warcraft
 which believe it or not has a board game version that was released in 2005. We enjoy playing this on
 weekends away but it's a complex game with many aspects to keep track off. To help with this we collaboratively

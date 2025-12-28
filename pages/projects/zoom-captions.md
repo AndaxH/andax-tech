@@ -5,8 +5,6 @@ description: Sending captions line by line to Zoom made easy
 tag: personal project
 ---
 
-# Zoom Captions
-
 When the Covid19 pandemic hit Australia around March 2020 it meant suddenly many aspects of life moved
 to online alternatives. This included church services on a Sunday and meant live streaming and
 congregating on Zoom calls instead of church halls.

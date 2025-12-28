@@ -5,8 +5,6 @@ description: In-browser Hearthstone card guessing game
 tag: personal project
 ---
 
-# Hearthsounds
-
 I built [Hearthsounds](https://hearthsounds.github.io) with my mate Blake from work as a fun side project, this was when I was getting
 more serious into learning web development and building software in general.
 
