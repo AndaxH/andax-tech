@@ -1,5 +1,5 @@
 ---
-title: Personal Project - WoW Board Game App
+title: Personal Project - World of Warcraft (WoW) Board Game App
 date: 2022/05/25
 description: Companion app for a nerdy board game
 tag: personal project
