@@ -96,6 +96,13 @@ const TEA_OPTIONS = [
     loose: true,
     black: false,
     herbal: true
+  },
+  {
+    name: 'Chai',
+    teabag: true,
+    loose: false,
+    black: true,
+    herbal: false
   }
 ]
 
