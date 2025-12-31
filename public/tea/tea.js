@@ -99,6 +99,7 @@ const TEA_OPTIONS = [
   },
   {
     name: 'Chai',
+    description: 'Spiced black tea',
     teabag: true,
     loose: false,
     black: true,
