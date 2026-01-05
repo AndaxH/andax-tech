@@ -25,7 +25,7 @@ const config = {
           <a href="https://x.com/AndaxTech">🐦 Twitter</a>
         </p>
         <p>
-          <a href="https://bsky.app/profile/andax.tech">🦋 Bluesky</a>
+          <a href="https://www.threads.com/@andaxhambert">🧵 Threads</a>
         </p>
         <p>
           <a href="https://www.linkedin.com/in/andrewkhammond/">💼 LinkedIn</a>
