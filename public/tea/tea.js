@@ -127,35 +127,27 @@ const main = () => {
     (a, b) => a.name.localeCompare(b.name)
   )
 
-  blackTeaOptions.forEach((tea) => {
-    const teaOption = document.createElement('li')
-    let teaOptionDescription
-    teaOption.innerText = tea.name
-    if (tea.description) {
-      teaOptionDescription = document.createElement('li')
-      teaOptionDescription.classList.add('tea-description')
-      teaOptionDescription.innerText = tea.description
-    }
-    blackTeaList.appendChild(teaOption)
-    if (teaOptionDescription) {
-      blackTeaList.appendChild(teaOptionDescription)
-    }
-  })
+  const renderTeaItem = (tea, list) => {
+    const li = document.createElement('li')
+    li.classList.add('tea-item')
 
-  herbalTeaOptions.forEach((tea) => {
-    const teaOption = document.createElement('li')
-    let teaOptionDescription
-    teaOption.innerText = tea.name
+    const name = document.createElement('div')
+    name.classList.add('tea-name')
+    name.textContent = tea.name
+    li.appendChild(name)
+
     if (tea.description) {
-      teaOptionDescription = document.createElement('li')
-      teaOptionDescription.classList.add('tea-description')
-      teaOptionDescription.innerText = tea.description
+      const desc = document.createElement('div')
+      desc.classList.add('tea-description')
+      desc.textContent = tea.description
+      li.appendChild(desc)
     }
-    herbalTeaList.appendChild(teaOption)
-    if (teaOptionDescription) {
-      herbalTeaList.appendChild(teaOptionDescription)
-    }
-  })
+
+    list.appendChild(li)
+  }
+
+  blackTeaOptions.forEach((tea) => renderTeaItem(tea, blackTeaList))
+  herbalTeaOptions.forEach((tea) => renderTeaItem(tea, herbalTeaList))
 
   const generateResultText = (differentTea) => {
     const blackTea = blackTeaCheckbox.checked

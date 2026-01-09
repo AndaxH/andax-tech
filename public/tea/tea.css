@@ -1,30 +1,212 @@
-#root {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 32px 16px;
+:root {
+  --color-bg: #faf8f5;
+  --color-surface: #ffffff;
+  --color-text: #2c2c2c;
+  --color-text-muted: #6b6b6b;
+  --color-accent: #8b5a2b;
+  --color-accent-hover: #6d4422;
+  --color-border: #e8e4df;
+  --color-black-tea: #5c3d2e;
+  --color-herbal-tea: #4a7c59;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
 
-  @media (max-width: 800px) {
-    flex-direction: column;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 700px) {
+  #root {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.25rem;
   }
 }
 
-#checkbox-options {
-  display: flex;
-  flex-direction: column;
-  margin: 8px;
+/* Left panel - Tea options */
+.options-panel h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-accent);
+}
 
-  span {
-    display: flex;
-    margin-bottom: 8px;
-  }
+.tea-category {
+  margin-bottom: 1.5rem;
+}
+
+.tea-category h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tea-category h3.black-tea-heading {
+  color: var(--color-black-tea);
+}
+
+.tea-category h3.herbal-tea-heading {
+  color: var(--color-herbal-tea);
+}
+
+.tea-list {
+  list-style: none;
+}
+
+.tea-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tea-item:last-child {
+  border-bottom: none;
+}
+
+.tea-name {
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .tea-description {
-  font-size: 14px;
-    margin-left: 8px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.125rem;
 }
 
-li {
-  margin-bottom: 4px;
+/* Right panel - Randomizer */
+.randomizer-panel {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#result-header {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+#result-text {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  min-height: 2.5rem;
+  word-wrap: break-word;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+#randomize {
+  background: var(--color-accent);
+  color: white;
+}
+
+#randomize:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+#randomize:active {
+  transform: translateY(0);
+}
+
+#yeah-nah {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+#yeah-nah:hover:not(:disabled) {
+  background: var(--color-border);
+}
+
+#yeah-nah:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Filter options */
+#checkbox-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.filter-group-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.filter-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.checkbox-wrapper label {
+  font-size: 0.875rem;
+  cursor: pointer;
+  user-select: none;
 }
