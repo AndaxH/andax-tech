@@ -1,17 +1,30 @@
-import React, { useEffect, useState } from 'react'
-import { scrollToTop } from '@/util/scroll-to-top'
+'use client'
+
+import { useEffect, useState } from 'react'
+
+const SCROLL_THRESHOLD = 300
 
 const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false)
 
   useEffect(() => {
-    if (document.body.scrollHeight > 1000) {
-      setShowButton(true)
+    const handleScroll = () => {
+      setShowButton(window.scrollY > SCROLL_THRESHOLD)
     }
+
+    // Check initial position
+    handleScroll()
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   if (!showButton) {
     return null
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (

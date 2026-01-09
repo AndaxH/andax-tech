@@ -4,8 +4,7 @@ export default function Document() {
   const meta = {
     title: '👋 Welcome to my little corner of the internet',
     description: 'Personal website of @AndaxTech (Andrew Hammond)',
-    image:
-      'https://pbs.twimg.com/profile_banners/3163496882/1652674908/1500x500'
+    image: 'https://andax.tech/images/og-banner.jpg'
   }
 
   return (

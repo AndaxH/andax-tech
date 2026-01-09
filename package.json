@@ -2,11 +2,14 @@
   "private": true,
   "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "build": "node ./scripts/gen-rss.js && next build --webpack",
     "start": "next start",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -27,6 +30,7 @@
     "semi": false
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@types/node": "20.2.1",
     "@types/react": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^8.52.0",
