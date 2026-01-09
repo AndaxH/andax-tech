@@ -32,7 +32,7 @@ const TEA_OPTIONS = [
     herbal: true
   },
   {
-    name: 'Black Tea Bag (Generic)',
+    name: 'Black Tea (Generic Tea Bag)',
     description: 'something breakfast (purchased on sale, probably)',
     teabag: true,
     loose: false,
@@ -40,7 +40,7 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'Green Tea Bag (Generic)',
+    name: 'Green Tea (Generic Tea Bag)',
     teabag: true,
     loose: false,
     black: false,
