@@ -9,8 +9,8 @@ const __dirname = dirname(__filename)
 
 async function generate() {
   const feed = new RSS({
-    title: '👋 Welcome to my little corner of the internet',
-    description: 'Personal website of @AndaxTech (Andrew Hammond)',
+    title: 'Andy Hammond',
+    description: '👋 Welcome to my little corner of the internet',
     site_url: 'https://andax.tech',
     feed_url: 'https://andax.tech/feed.xml'
   })

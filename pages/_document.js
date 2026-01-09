@@ -2,8 +2,8 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   const meta = {
-    title: '👋 Welcome to my little corner of the internet',
-    description: 'Personal website of @AndaxTech (Andrew Hammond)',
+    title: 'Andy Hammond',
+    description: '👋 Welcome to my little corner of the internet',
     image: 'https://andax.tech/images/og-banner.jpg'
   }
 
