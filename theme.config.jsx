@@ -22,9 +22,6 @@ const config = {
       <a href="/feed.xml">RSS</a>
       <span>
         <p>
-          <a href="https://x.com/AndaxTech">🐦 Twitter</a>
-        </p>
-        <p>
           <a href="https://www.threads.com/@andaxhambert">🧵 Threads</a>
         </p>
         <p>

@@ -22,11 +22,11 @@ Below is a collection of what I'd say make up part of the Zeitgeist that is the 
 
 ## [Startup = Growth](http://www.paulgraham.com/growth.html)
 
-Written by [Paul Graham](https://twitter.com/paulg) who is well known for various things in tech such as co-founding [Y Combinator](https://www.ycombinator.com/)
+Written by Paul Graham who is well known for various things in tech such as co-founding [Y Combinator](https://www.ycombinator.com/)
 
 ## [Things You Should Never Do](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
-Written by [Joel Spolsky](https://twitter.com/spolsky) who is well known for various things in tech such as co-founding
+Written by Joel Spolsky who is well known for various things in tech such as co-founding
 [Glitch née Fog Creek Software](https://medium.com/make-better-software/fog-creek-is-now-glitch-8d0308aaf69e) and [Trello](https://trello.com/)
 
 ## [State of DevOps](https://cloud.google.com/devops/state-of-devops)
@@ -35,7 +35,7 @@ For the last eight years, Google have produced the State of [DevOps](https://www
 
 ## [Product Engineers](https://sherifmansour.medium.com/product-engineers-f424da766871)
 
-Written by [Sherif Mansour](https://twitter.com/sherifmansour) who is an absolute grand wizard of Product Management
+Written by Sherif Mansour who is an absolute grand wizard of Product Management
 
 ## [Engineering Archetypes](https://candor.co/articles/career-paths/engineer-archetypes-which-one-are-you)
 
