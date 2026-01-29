@@ -5,8 +5,6 @@ description: The technology behind styling and layout for the web
 tag: web development, frontend, css
 ---
 
-# Cascading Style Sheets (CSS)
-
 ## [One Line Layouts](https://web.dev/one-line-layouts/)
 
 [Una Kravets](https://web.dev/authors/una/) is a CSS Wizard working in developer relations for Google focused on Chrome. Here article https://web.dev/one-line-layouts/ is a great intro to the power of CSS.

@@ -5,8 +5,6 @@ description: The technology behind user interfaces and experiences on the web
 tag: web development, frontend, css, javascript, html
 ---
 
-# Frontend
-
 https://en.wikipedia.org/wiki/Frontend_and_backend
 
 HTML, [CSS](/resource-library/css) and JavaScript are the core components of user interfaces and experiences on the web.
