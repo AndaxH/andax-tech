@@ -161,15 +161,9 @@ const main = () => {
     }
 
     const filteredTeaOptions = TEA_OPTIONS.filter((tea) => {
-      if (blackTea && !tea.black) {
-        return false
-      }
-      if (herbalTea && !tea.herbal) {
-        return false
-      }
-      if ((teabag && tea.teabag) || (loose && tea.loose)) {
-        return true
-      }
+      const matchesType = (blackTea && tea.black) || (herbalTea && tea.herbal)
+      const matchesFormat = (teabag && tea.teabag) || (loose && tea.loose)
+      return matchesType && matchesFormat
     })
 
     if (filteredTeaOptions.length === 0) {
