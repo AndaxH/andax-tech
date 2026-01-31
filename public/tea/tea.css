@@ -152,21 +152,6 @@ button {
   transform: translateY(0);
 }
 
-#yeah-nah {
-  background: var(--color-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
-}
-
-#yeah-nah:hover:not(:disabled) {
-  background: var(--color-border);
-}
-
-#yeah-nah:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 /* Filter options */
 #checkbox-options {
   display: flex;

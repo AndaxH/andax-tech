@@ -109,7 +109,6 @@ const TEA_OPTIONS = [
 
 const main = () => {
   const randomizeButton = document.getElementById('randomize')
-  const yeahNahButton = document.getElementById('yeah-nah')
   const blackTeaList = document.getElementById('black-tea-list')
   const herbalTeaList = document.getElementById('herbal-tea-list')
   const resultText = document.getElementById('result-text')
@@ -149,7 +148,7 @@ const main = () => {
   blackTeaOptions.forEach((tea) => renderTeaItem(tea, blackTeaList))
   herbalTeaOptions.forEach((tea) => renderTeaItem(tea, herbalTeaList))
 
-  const generateResultText = (differentTea) => {
+  const generateResultText = () => {
     const blackTea = blackTeaCheckbox.checked
     const herbalTea = herbalTeaCheckbox.checked
     const teabag = teabagCheckbox.checked
@@ -173,28 +172,23 @@ const main = () => {
       }
     })
 
-    const randomIndex = Math.floor(Math.random() * filteredTeaOptions.length)
-    const randomTea = filteredTeaOptions[randomIndex]
-
-    if (differentTea && lastTeaResult) {
-      if (randomTea.name === lastTeaResult.name) {
-        generateResultText(true)
-        return
-      }
+    if (filteredTeaOptions.length === 0) {
+      resultText.innerText = 'No teas match your filters'
+      return
     }
 
-    lastTeaResult = randomTea
+    const candidates = lastTeaResult && filteredTeaOptions.length > 1
+      ? filteredTeaOptions.filter((tea) => tea.name !== lastTeaResult.name)
+      : filteredTeaOptions
 
-    resultText.innerText = randomTea.name
-    yeahNahButton.disabled = false
+    const randomIndex = Math.floor(Math.random() * candidates.length)
+    lastTeaResult = candidates[randomIndex]
+
+    resultText.innerText = lastTeaResult.name
   }
 
   randomizeButton.addEventListener('click', () => {
     generateResultText()
-  })
-
-  yeahNahButton.addEventListener('click', () => {
-    generateResultText(true)
   })
 }
 
