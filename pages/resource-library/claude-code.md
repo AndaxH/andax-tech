@@ -45,11 +45,11 @@ The biggest hurdle with AI agents is "context rot." After 20 minutes of coding, 
 
 ## 2. [Ralph Bash Loops](https://ghuntley.com/ralph/): The Autonomous "Overnight" Engineer
 
+**Focus:** Hands-off execution and remote automation.
+
 [Everything is a Ralph Loop](https://ghuntley.com/loop/) covers the concept well, one implementation of
 them is [Ralph Inferno](https://github.com/sandstream/ralph-inferno) and another is an official Claude plugin
 provided by Anthropic [Ralph Loop Plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop).
-
-**Focus:** Hands-off execution and remote automation.
 
 If GSD is a steering wheel, **Ralph Bash Loops** is a self-driving car. Designed to run on remote VMs (Virtual Machines), Ralph is built for the "Build while you sleep" philosophy.
 
