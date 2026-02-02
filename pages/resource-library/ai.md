@@ -1,6 +1,6 @@
 ---
 title: Artificial Intelligence
-date: 2025-12-16
+date: 2026-02-02
 description: We gave sand the ability to think 🤯
 tag: software development, ai
 ---
@@ -54,6 +54,8 @@ AI image generation for Gemini.
 > Meet your thinking partner
 
 Built by Anthropic and regarded as having some of the best models specifically for software engineering use-cases e.g. [Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5).
+
+Check out more [here](/resource-library/claude-code)
 
 ### [Cursor](https://cursor.com/)
 
