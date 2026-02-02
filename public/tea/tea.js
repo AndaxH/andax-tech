@@ -1,6 +1,6 @@
 const TEA_OPTIONS = [
   {
-    name: 'Melbourne Breakfast',
+    name: 'Melbourne Breakfast (T2)',
     description: 'Black tea w/ vanilla',
     teabag: true,
     loose: true,
@@ -8,7 +8,7 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'New York Breakfast',
+    name: 'New York Breakfast (T2)',
     description: 'Black tea w/ cinnamon',
     teabag: false,
     loose: true,
@@ -16,7 +16,7 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'Canberra Breakfast',
+    name: 'Canberra Breakfast (T2)',
     description:
       'Black tea w/ cinnamon & coconut (tastes like an anzac biscuit)',
     teabag: false,
@@ -25,7 +25,7 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'Peppermint',
+    name: 'Peppermint (T2)',
     teabag: true,
     loose: false,
     black: false,
@@ -40,7 +40,9 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
-    name: 'Green Tea (Generic Tea Bag)',
+    name: 'Gorgeous Geisha (T2)',
+    description:
+      'A show-stopping smooth green tea with strawberries and lush hints of cream.',
     teabag: true,
     loose: false,
     black: false,
@@ -171,9 +173,10 @@ const main = () => {
       return
     }
 
-    const candidates = lastTeaResult && filteredTeaOptions.length > 1
-      ? filteredTeaOptions.filter((tea) => tea.name !== lastTeaResult.name)
-      : filteredTeaOptions
+    const candidates =
+      lastTeaResult && filteredTeaOptions.length > 1
+        ? filteredTeaOptions.filter((tea) => tea.name !== lastTeaResult.name)
+        : filteredTeaOptions
 
     const randomIndex = Math.floor(Math.random() * candidates.length)
     lastTeaResult = candidates[randomIndex]
