@@ -1,6 +1,6 @@
 ---
 title: Claude Code & Community Frameworks
-date: 2026-01-29
+date: 2026-02-02
 description: Anthropic's agentic coding tool that lives in your terminal and helps you turn ideas into code faster than ever before.
 tag: software development, ai
 ---
