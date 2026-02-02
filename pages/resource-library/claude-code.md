@@ -65,7 +65,7 @@ If GSD is a steering wheel, **Ralph Bash Loops** is a self-driving car. Designed
 
 Created by Peter Steinberger (founder of PSPDFKit), **OpenClaw** (formerly Clawdbot / Moltbot) is the most "lifestyle" friendly of the three. It acts as a bridge between your local development environment and your messaging apps.
 
-- **The Workflow:** It turns **WhatsApp or Telegram** into a remote terminal. You can text your computer to "Run the test suite" or "Summarize the last 50 lines of the error log" while you're away from your desk.
+- **The Workflow:** It turns **WhatsApp or Telegram** into a remote terminal. You can text your computer to "Run the test suite" or "Summarise the last 50 lines of the error log" while you're away from your desk.
 - **The Standout Feature:** It's proactive. OpenClaw can watch your builds and ping you on your phone the second something breaks, allowing you to trigger a fix via text.
 - **Best for:** Solo founders and DevOps engineers who need to keep an eye on their "digital factory" 24/7.
 
@@ -82,3 +82,5 @@ Created by Peter Steinberger (founder of PSPDFKit), **OpenClaw** (formerly Clawd
 ### Final Thoughts
 
 Claude Code is a very impressive product, but these community tools can take it further. For most developers already familiar with Claude Code, starting with **Get Shit Done** is appealing for any green field projects. If you're feeling adventurous and want to see what 100% autonomous coding looks like, spin up a VM and let **Ralph** run wild. There has been a lot of buzz most recently about ~~**Clawdbot**~~ ~~**Moltbot**~~ **OpenClaw** however and clearly loved by a bunch of folks.
+
+This article is also published at https://medium.com/@andaxhambert/claude-code-community-frameworks-dbce498955b8
