@@ -3,6 +3,22 @@ import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 const YEAR = new Date().getFullYear()
 
 const config = {
+  head: ({ title, meta }) => {
+    const pageTitle = title ? `${title} - Andy Hammond` : 'Andy Hammond'
+    const description = meta.description || '👋 Welcome to my little corner of the internet'
+    const image = meta.image || 'https://andax.tech/images/og-banner.jpg'
+
+    return (
+      <>
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+      </>
+    )
+  },
   postFooter: <ScrollToTopButton />,
   footer: (
     <small style={{ display: 'block', marginTop: '4rem' }}>
