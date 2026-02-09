@@ -12,3 +12,4 @@ Below is a collection of some personal projects I've worked on in the past 😃
 - [Tea Randomizer](/projects/tea)
 - [Daily Bible Verse](/projects/verses)
 - [Stocks Earnings Calendar](/projects/stocks)
+- [Daily Target 9-Letter Word Builder Game](/projects/words)
