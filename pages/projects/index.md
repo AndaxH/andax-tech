@@ -4,8 +4,6 @@ title: Projects
 date: 2000-01-01
 ---
 
-import Image from 'next/image'
-
 Below is a collection of some personal projects I've worked on in the past 😃
 
 - [Daily Target 9-Letter Word Builder Game](/projects/words)
