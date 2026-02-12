@@ -8,13 +8,13 @@ import Image from 'next/image'
 
 Below is a collection of some personal projects I've worked on in the past 😃
 
-- [Hearthsounds](/projects/hearthsounds)
-- [Zoom Captions](/projects/zoom-captions)
-- [World of Warcraft (WoW) Board Game App](/projects/wow-board-game-app)
-- [Tea Randomizer](/projects/tea)
-- [Daily Bible Verse](/projects/verses)
-- [Stocks Earnings Calendar](/projects/stocks)
 - [Daily Target 9-Letter Word Builder Game](/projects/words)
+- [Stocks Earnings Calendar](/projects/stocks)
+- [Daily Bible Verse](/projects/verses)
+- [Tea Randomizer](/projects/tea)
+- [World of Warcraft (WoW) Board Game App](/projects/wow-board-game-app)
+- [Zoom Captions](/projects/zoom-captions)
+- [Hearthsounds](/projects/hearthsounds)
 
 ## Technology I'm hacking on ATM / on my radar
 
