@@ -25,6 +25,13 @@ const TEA_OPTIONS = [
     herbal: false
   },
   {
+    name: 'Christmas Tea',
+    teabag: false,
+    loose: true,
+    black: true,
+    herbal: false
+  },
+  {
     name: 'Peppermint (T2)',
     teabag: true,
     loose: false,
@@ -74,13 +81,6 @@ const TEA_OPTIONS = [
     name: 'Orange & Cinnamon',
     teabag: true,
     loose: false,
-    black: false,
-    herbal: true
-  },
-  {
-    name: 'Apple Almond Danish',
-    teabag: false,
-    loose: true,
     black: false,
     herbal: true
   },
