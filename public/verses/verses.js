@@ -336,6 +336,21 @@ const main = () => {
   }
   getRandomProverb()
   randomProverbButton.addEventListener('click', getRandomProverb)
+
+  const randomParableButton = document.getElementById('random-parable')
+  const parableTitle = document.getElementById('parable-title')
+  const parableReference = document.getElementById('parable-reference')
+  const parableText = document.getElementById('parable-text')
+
+  const getRandomParable = () => {
+    const randomIndex = Math.floor(Math.random() * parables.length)
+    const randomParable = parables[randomIndex]
+    parableTitle.textContent = randomParable.title
+    parableReference.textContent = randomParable.reference
+    parableText.textContent = randomParable.text
+  }
+  getRandomParable()
+  randomParableButton.addEventListener('click', getRandomParable)
 }
 
 main()
