@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#1f2028" />
-    <title>📖 Bible Verses</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="theme-color" content="#0f0f12" />
+    <title>Scripture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link href="verses.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -16,24 +16,88 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-      <main>
-        <h2 id="verse-header">📖</h2>
-        <bold id="verse-reference"></bold>
-        <p id="verse-text"></p>
-        <button id="random-verse">🔄</button>
-        <h2 id="proverbs-header">📜</h2>
-        <div id="loader"></div>
-        <bold id="proverbs-reference"></bold>
-        <p id="proverbs-text"></p>
-        <button id="random-proverb">🔄</button>
-        <h2 id="parable-header">📕</h2>
-        <bold id="parable-title"></bold>
-        <bold id="parable-reference"></bold>
-        <p id="parable-text"></p>
-        <button id="random-parable">🔄</button>
+
+    <div class="grain"></div>
+
+    <div class="container">
+      <header class="site-header">
+        <div class="header-ornament"></div>
+        <h1>Scripture</h1>
+        <p class="tagline">Words of light for the journey</p>
+      </header>
+
+      <main class="cards">
+        <!-- Verse Card -->
+        <article class="card card--verse">
+          <div class="card-inner">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+              </svg>
+            </div>
+            <span class="card-label">Verse</span>
+            <div class="card-content">
+              <blockquote id="verse-text" class="scripture-text"></blockquote>
+              <cite id="verse-reference" class="scripture-ref"></cite>
+            </div>
+            <button id="random-verse" class="refresh-btn" aria-label="New verse">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Proverb Card -->
+        <article class="card card--proverb">
+          <div class="card-inner">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
+              </svg>
+            </div>
+            <span class="card-label">Proverb</span>
+            <div class="card-content">
+              <div id="loader" class="loader"></div>
+              <blockquote id="proverbs-text" class="scripture-text"></blockquote>
+              <cite id="proverbs-reference" class="scripture-ref"></cite>
+            </div>
+            <button id="random-proverb" class="refresh-btn" aria-label="New proverb">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Parable Card -->
+        <article class="card card--parable">
+          <div class="card-inner">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+              </svg>
+            </div>
+            <span class="card-label">Parable</span>
+            <div class="card-content">
+              <h3 id="parable-title" class="parable-title"></h3>
+              <blockquote id="parable-text" class="scripture-text scripture-text--parable"></blockquote>
+              <cite id="parable-reference" class="scripture-ref"></cite>
+            </div>
+            <button id="random-parable" class="refresh-btn" aria-label="New parable">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </button>
+          </div>
+        </article>
       </main>
+
+      <footer class="site-footer">
+        <div class="footer-ornament"></div>
+      </footer>
     </div>
+
     <script type="text/javascript" src="parables.js"></script>
     <script type="text/javascript" src="verses.js"></script>
   </body>

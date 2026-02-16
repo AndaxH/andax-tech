@@ -273,7 +273,7 @@ const verses = [
   },
   {
     reference: 'Hebrews 4:14-16',
-    text: 'Therefore, since we have a great high priest who has ascended into heaven, Jesus the Son of God, let us hold firmly to the faith we profess. For we do not have a high priest who is unable to empathize with our weaknesses, but we have one who has been tempted in every way, just as we are—yet he did not sin. Let us then approach God’s throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need.'
+    text: 'Therefore, since we have a great high priest who has ascended into heaven, Jesus the Son of God, let us hold firmly to the faith we profess. For we do not have a high priest who is unable to empathize with our weaknesses, but we have one who has been tempted in every way, just as we are—yet he did not sin. Let us then approach God\'s throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need.'
   },
   {
     reference: 'James 4:7-8',
@@ -289,68 +289,115 @@ const verses = [
   }
 ]
 
+// Utility: Fade transition helper
+const fadeTransition = (elements, updateFn, duration = 300) => {
+  elements.forEach(el => el.classList.add('fade-out'))
+  setTimeout(() => {
+    updateFn()
+    elements.forEach(el => el.classList.remove('fade-out'))
+  }, duration)
+}
+
 const main = () => {
+  // ─────────────────────────────────────────────────────────────
+  // Random Verse
+  // ─────────────────────────────────────────────────────────────
   const randomVerseButton = document.getElementById('random-verse')
   const verseReference = document.getElementById('verse-reference')
   const verseText = document.getElementById('verse-text')
 
-  const getRandomVerse = () => {
+  const getRandomVerse = (animate = true) => {
     const randomIndex = Math.floor(Math.random() * verses.length)
     const randomVerse = verses[randomIndex]
-    verseReference.textContent = randomVerse.reference
-    verseText.textContent = randomVerse.text
-  }
-  getRandomVerse()
-  randomVerseButton.addEventListener('click', getRandomVerse)
 
+    if (animate) {
+      fadeTransition([verseReference, verseText], () => {
+        verseReference.textContent = randomVerse.reference
+        verseText.textContent = randomVerse.text
+      })
+    } else {
+      verseReference.textContent = randomVerse.reference
+      verseText.textContent = randomVerse.text
+    }
+  }
+
+  getRandomVerse(false)
+  randomVerseButton.addEventListener('click', () => getRandomVerse(true))
+
+  // ─────────────────────────────────────────────────────────────
+  // Random Proverb
+  // ─────────────────────────────────────────────────────────────
   const randomProverbButton = document.getElementById('random-proverb')
   const proverbsReference = document.getElementById('proverbs-reference')
   const proverbsText = document.getElementById('proverbs-text')
   const loader = document.getElementById('loader')
 
-  const getRandomProverb = async () => {
-    if (loader.style.display === 'none') {
-      loader.style.display = 'block'
-      proverbsReference.textContent = ''
-      proverbsText.textContent = ''
-    }
-    const PROVERBS_BOOK_ID = 'PRO'
-    const bibleApi = `https://bible-api.com/data/web/random/${PROVERBS_BOOK_ID}`
-    const response = await fetch(bibleApi)
-    const json = await response.json()
-    // {
-    //     "translation": {
-    //       ...
-    //     },
-    //     "random_verse": {
-    //       "book_id": "PRO",
-    //       "book": "Proverbs",
-    //       "chapter": 21,
-    //       "verse": 7,
-    //       "text": "The violence of the wicked will drive them away,\nbecause they refuse to do what is right.\n"
-    //     }
-    // }
-    loader.style.display = 'none'
-    proverbsReference.textContent = `${json.random_verse.book} ${json.random_verse.chapter}:${json.random_verse.verse}`
-    proverbsText.textContent = json.random_verse.text
-  }
-  getRandomProverb()
-  randomProverbButton.addEventListener('click', getRandomProverb)
+  const getRandomProverb = async (animate = true) => {
+    // Show loader
+    loader.classList.add('visible')
 
+    if (animate) {
+      proverbsReference.classList.add('fade-out')
+      proverbsText.classList.add('fade-out')
+    }
+
+    proverbsReference.textContent = ''
+    proverbsText.textContent = ''
+
+    try {
+      const PROVERBS_BOOK_ID = 'PRO'
+      const bibleApi = `https://bible-api.com/data/web/random/${PROVERBS_BOOK_ID}`
+      const response = await fetch(bibleApi)
+      const json = await response.json()
+
+      loader.classList.remove('visible')
+      proverbsReference.textContent = `${json.random_verse.book} ${json.random_verse.chapter}:${json.random_verse.verse}`
+      proverbsText.textContent = json.random_verse.text
+      proverbsReference.classList.remove('fade-out')
+      proverbsText.classList.remove('fade-out')
+    } catch (error) {
+      loader.classList.remove('visible')
+      proverbsText.textContent = 'Unable to load proverb. Please try again.'
+      proverbsText.classList.remove('fade-out')
+    }
+  }
+
+  getRandomProverb(false)
+  randomProverbButton.addEventListener('click', () => getRandomProverb(true))
+
+  // ─────────────────────────────────────────────────────────────
+  // Random Parable
+  // ─────────────────────────────────────────────────────────────
   const randomParableButton = document.getElementById('random-parable')
   const parableTitle = document.getElementById('parable-title')
   const parableReference = document.getElementById('parable-reference')
   const parableText = document.getElementById('parable-text')
 
-  const getRandomParable = () => {
+  const getRandomParable = (animate = true) => {
     const randomIndex = Math.floor(Math.random() * parables.length)
     const randomParable = parables[randomIndex]
-    parableTitle.textContent = randomParable.title
-    parableReference.textContent = randomParable.reference
-    parableText.textContent = randomParable.text
+
+    if (animate) {
+      fadeTransition([parableTitle, parableReference, parableText], () => {
+        parableTitle.textContent = randomParable.title
+        parableReference.textContent = randomParable.reference
+        parableText.textContent = randomParable.text
+        // Scroll text back to top
+        parableText.scrollTop = 0
+      })
+    } else {
+      parableTitle.textContent = randomParable.title
+      parableReference.textContent = randomParable.reference
+      parableText.textContent = randomParable.text
+    }
   }
-  getRandomParable()
-  randomParableButton.addEventListener('click', getRandomParable)
+
+  getRandomParable(false)
+  randomParableButton.addEventListener('click', () => getRandomParable(true))
 }
 
-main()
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', main)
+} else {
+  main()
+}

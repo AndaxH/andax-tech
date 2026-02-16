@@ -1,80 +1,480 @@
+/* ═══════════════════════════════════════════════════════════
+   SCRIPTURE - Sacred Contemplation Theme
+   A reverent, editorial aesthetic inspired by illuminated manuscripts
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Deep, rich background palette */
+  --bg-deep: #0a0a0c;
+  --bg-primary: #0f0f12;
+  --bg-elevated: #161619;
+  --bg-card: #1a1a1f;
+
+  /* Warm amber/gold accent - like candlelight */
+  --accent-gold: #c9a227;
+  --accent-gold-dim: #8a7019;
+  --accent-gold-glow: rgba(201, 162, 39, 0.15);
+  --accent-warm: #e8d5a3;
+
+  /* Text hierarchy */
+  --text-primary: #f0ebe0;
+  --text-secondary: #a8a298;
+  --text-muted: #6b6760;
+
+  /* Borders and dividers */
+  --border-subtle: rgba(201, 162, 39, 0.12);
+  --border-accent: rgba(201, 162, 39, 0.25);
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Spectral', Georgia, serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Reset & Base
+   ───────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Helvetica, sans-serif;
-  font-size: x-large;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #1f2028;
-  color: #e5e5e5;
-
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  padding: 32px;
-  max-width: 800px;
+/* ─────────────────────────────────────────────────────────────
+   Film Grain Overlay - Subtle texture
+   ───────────────────────────────────────────────────────────── */
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Container Layout
+   ───────────────────────────────────────────────────────────── */
+
+.container {
+  max-width: 960px;
   margin: 0 auto;
-  line-height: 1.6;
+  padding: var(--space-lg) var(--space-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#verse-header, #proverbs-header, #parable-header {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+/* ─────────────────────────────────────────────────────────────
+   Header
+   ───────────────────────────────────────────────────────────── */
+
+.site-header {
+  text-align: center;
+  padding: var(--space-xl) 0 var(--space-lg);
+  animation: fadeIn 1s ease-out;
+}
+
+.header-ornament {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+  margin: 0 auto var(--space-md);
+}
+
+.site-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Cards Grid
+   ───────────────────────────────────────────────────────────── */
+
+.cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-md) 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Card Component
+   ───────────────────────────────────────────────────────────── */
+
+.card {
+  position: relative;
+  animation: cardReveal 0.8s ease-out backwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+
+.card-inner {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  padding: var(--space-lg) var(--space-xl);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  background: radial-gradient(ellipse at top, var(--accent-gold-glow), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card:hover .card-inner {
+  border-color: var(--border-accent);
+}
+
+.card:hover .card-inner::before {
+  opacity: 1;
+}
+
+/* Card Icon */
+.card-icon {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 28px;
+  height: 28px;
+  color: var(--accent-gold-dim);
+  opacity: 0.6;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .card-icon {
+  opacity: 1;
+  color: var(--accent-gold);
+}
+
+/* Card Label */
+.card-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Card Content */
+.card-content {
+  position: relative;
+  min-height: 140px;
+}
+
+/* Scripture Text */
+.scripture-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.9;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.scripture-text.fade-out {
+  opacity: 0;
+}
+
+.scripture-text--parable {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: var(--space-sm);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-gold-dim) transparent;
+}
+
+.scripture-text--parable::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scripture-text--parable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scripture-text--parable::-webkit-scrollbar-thumb {
+  background: var(--accent-gold-dim);
+  border-radius: 2px;
+}
+
+/* Scripture Reference */
+.scripture-ref {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--accent-warm);
+  margin-top: var(--space-md);
+  letter-spacing: 0.03em;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.scripture-ref.fade-out {
+  opacity: 0;
+}
+
+.scripture-ref::before {
+  content: '— ';
+  color: var(--accent-gold-dim);
+}
+
+/* Parable Title */
+.parable-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--accent-warm);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.02em;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.parable-title.fade-out {
+  opacity: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Refresh Button
+   ───────────────────────────────────────────────────────────── */
+
+.refresh-btn {
+  position: absolute;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.refresh-btn svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s ease;
+}
+
+.refresh-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: var(--accent-gold-glow);
+}
+
+.refresh-btn:hover svg {
+  transform: rotate(180deg);
+}
+
+.refresh-btn:active svg {
+  transform: rotate(360deg);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Loader
+   ───────────────────────────────────────────────────────────── */
+
+.loader {
+  display: none;
+  width: 32px;
+  height: 32px;
+  margin: var(--space-lg) 0;
+  border: 2px solid var(--border-subtle);
+  border-top-color: var(--accent-gold);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader.visible {
+  display: block;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Footer
+   ───────────────────────────────────────────────────────────── */
+
+.site-footer {
+  padding: var(--space-xl) 0 var(--space-lg);
   text-align: center;
 }
 
-#verse-reference, #proverbs-reference, #parable-reference {
-  font-size: 1.75rem;
-  font-weight: bold;
-  margin: 1rem 0;
+.footer-ornament {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold-dim), transparent);
+  margin: 0 auto;
 }
 
-#parable-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
+/* ─────────────────────────────────────────────────────────────
+   Animations
+   ───────────────────────────────────────────────────────────── */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#verse-text, #proverbs-text, #parable-text {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  margin: 1rem 0;
-}
-
-button {
-  background-color: #2e2e3b;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
-}
-
-button:hover {
-  background-color: #3d3d4f;
-}
-
-#loader {
-  margin: 16px auto;
-  border: 5px solid #f3f3f3;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-  border-top: 5px solid #555;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.hide {
-  display: none;
+@keyframes textReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Responsive Adjustments
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  :root {
+    --space-lg: 1.75rem;
+    --space-xl: 2.5rem;
+  }
+
+  .container {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .card-inner {
+    padding: var(--space-md);
+  }
+
+  .card-icon {
+    width: 24px;
+    height: 24px;
+    top: var(--space-sm);
+    right: var(--space-sm);
+  }
+
+  .refresh-btn {
+    width: 40px;
+    height: 40px;
+    bottom: var(--space-sm);
+    right: var(--space-sm);
+  }
+
+  .scripture-text--parable {
+    max-height: 280px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Print Styles
+   ───────────────────────────────────────────────────────────── */
+
+@media print {
+  .grain,
+  .refresh-btn,
+  .card-icon {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .card-inner {
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
 }
