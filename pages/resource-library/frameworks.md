@@ -15,7 +15,7 @@ Built and funded by Meta Software, React is the industry standard library for we
 
 > The React Framework for the Web
 
-I built https://www.andax.tech/ including this resource library using NEXT.js 😃
+I built <https://www.andax.tech/> including this resource library using NEXT.js 😃
 
 ## [Svelte](https://svelte.dev/)
 
@@ -29,7 +29,7 @@ I built https://www.andax.tech/ including this resource library using NEXT.js �
 
 Javascript was originally designed and built to be run in the browser, Node enables using JS in server environments.
 
-It's also responsible for `node_modules` (https://www.typescriptlang.org/docs/handbook/module-resolution.html)
+It's also responsible for `node_modules` (<https://www.typescriptlang.org/docs/handbook/module-resolution.html>)
 
 ### [Express](https://expressjs.com/)
 
@@ -45,17 +45,19 @@ It's also responsible for `node_modules` (https://www.typescriptlang.org/docs/ha
 
 ## [REST APIs](https://aws.amazon.com/what-is/restful-api/#:~:text=RESTful%20API%20is%20an%20interface,applications%20to%20perform%20various%20tasks.)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ineakP9dA3s?si=0foigV5NrjnixTPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 > RESTful API is an interface that two computer systems use to exchange information securely over the internet. Most business applications have to communicate with other internal and third-party applications to perform various tasks.
 
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+<https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods>
 
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+<https://developer.mozilla.org/en-US/docs/Web/HTTP/Status>
 
 ## [Typescript](https://www.typescriptlang.org/)
 
 > JavaScript with Syntax for Types
 
-https://en.wikipedia.org/wiki/Strong_and_weak_typing
+<https://en.wikipedia.org/wiki/Strong_and_weak_typing>
 
 ## [Serverless](https://www.serverless.com/)
 
