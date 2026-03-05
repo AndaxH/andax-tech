@@ -16,23 +16,7 @@ Below is a collection of some personal projects I've worked on in the past 😃
 
 ## Technology I'm hacking on ATM / on my radar
 
-<figure>
-  <Image
-    src="/images/jules.png"
-    alt="Photo"
-    priority
-    className="next-image"
-    width="660"
-    height="370"
-  />
-  <figcaption>Screenshot of Jules by Google</figcaption>
-</figure>
-
 - [Claude Code](/resource-library/claude-code)
-  - Ralph Loops
-  - GSD plugin
-  - Code simplifier plugin
-  - Frontend design plugin
 - [Jules](https://jules.google/)
 - [Craft Agents](https://agents.craft.do/)
 - [Expo App Template](https://github.com/nkzw-tech/expo-app-template)
