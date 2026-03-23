@@ -14,10 +14,7 @@ A great breakdown of how tech companies strengths are in their bottoms up struct
 ## [The Pragmatic Engineer](https://www.pragmaticengineer.com/)
 
 Across podcasts, books and his books Gergely provides insight into and a wealth of resources about working in tech, especially as a software
-engineer or manager. I personally have particularly enjoyed the interviews he has done with other notable individuals working in the world of tech:
-
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/2Bho9xCbOQMWMJ7UKmqCzD/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<!-- https://open.spotify.com/show/2Bho9xCbOQMWMJ7UKmqCzD -->
+engineer or manager. I personally have particularly enjoyed the [interviews](https://open.spotify.com/show/2Bho9xCbOQMWMJ7UKmqCzD) he has done with other notable individuals working in the world of tech.
 
 ## [Twitter Thread - 11 Promises from a Manager](https://twitter.com/MrEchs/status/1516024322409832450?t=2NFCfifUqUUOuZ84FgsWow&s=19)
 
