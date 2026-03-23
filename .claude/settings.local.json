@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Skill(frontend-design)",
-      "Bash(node -c:*)"
+      "Bash(node -c:*)",
+      "Bash(xargs ls:*)",
+      "Bash(ls:*)",
+      "Bash(find /Users/andax/Code/andax-tech/node_modules/.pnpm/nextra@2.13.4*/node_modules/nextra/dist -name \"*.js\")",
+      "Bash(grep -r subheading-anchor /Users/andax/Code/andax-tech/node_modules/.pnpm/nextra@2.13.4*/node_modules/nextra/dist/)",
+      "Bash(pnpm dev:*)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_hover",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "Bash(pnpm lint:*)",
+      "mcp__plugin_playwright_playwright__browser_snapshot"
     ]
   }
 }

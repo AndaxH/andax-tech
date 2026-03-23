@@ -39,3 +39,5 @@ public/feed.xml
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.playwright-mcp
