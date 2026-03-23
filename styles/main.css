@@ -157,22 +157,25 @@ div .nx-flex a[href^='/story'] {
   display: none !important;
 }
 
-/* Heading hover color */
-article :is(h2, h3, h4, h5, h6) {
+/* Heading hover color - only for headings containing links */
+article :is(h2, h3, h4, h5, h6):has(a:not(.subheading-anchor)) {
   transition: color 0.2s ease;
 }
-article :is(h2, h3, h4, h5, h6):hover,
-article :is(h2, h3, h4, h5, h6):hover a {
+article :is(h2, h3, h4, h5, h6):has(a:not(.subheading-anchor)):hover,
+article :is(h2, h3, h4, h5, h6):has(a:not(.subheading-anchor)):hover a {
   color: #004a99;
 }
-[class='dark'] article :is(h2, h3, h4, h5, h6):hover,
-[class='dark'] article :is(h2, h3, h4, h5, h6):hover a {
+[class='dark'] article :is(h2, h3, h4, h5, h6):has(a:not(.subheading-anchor)):hover,
+[class='dark'] article :is(h2, h3, h4, h5, h6):has(a:not(.subheading-anchor)):hover a {
   color: #5eaae6;
 }
 
-/* Replace # anchor icon with external link icon */
-.subheading-anchor {
+/* Replace # anchor icon with external link icon - only for headings with links */
+:is(h2, h3, h4, h5, h6):has(a:not(.subheading-anchor)) > .subheading-anchor {
   margin-left: 0.5rem !important;
+}
+:is(h2, h3, h4, h5, h6):not(:has(a:not(.subheading-anchor))) > .subheading-anchor {
+  display: none !important;
 }
 .subheading-anchor::after {
   content: '' !important;
