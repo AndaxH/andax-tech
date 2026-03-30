@@ -97,6 +97,17 @@ body {
   margin-top: 0.125rem;
 }
 
+.tea-item--oos .tea-name {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.tea-oos {
+  font-size: 0.75rem;
+  color: #b04040;
+  margin-top: 0.125rem;
+}
+
 /* Right panel - Randomizer */
 .randomizer-panel {
   background: var(--color-surface);

@@ -22,7 +22,8 @@ const TEA_OPTIONS = [
     teabag: false,
     loose: true,
     black: true,
-    herbal: false
+    herbal: false,
+    outOfStock: true
   },
   {
     name: 'Christmas Tea',
@@ -144,6 +145,14 @@ const main = () => {
       li.appendChild(desc)
     }
 
+    if (tea.outOfStock) {
+      li.classList.add('tea-item--oos')
+      const oos = document.createElement('div')
+      oos.classList.add('tea-oos')
+      oos.textContent = 'Out of stock'
+      li.appendChild(oos)
+    }
+
     list.appendChild(li)
   }
 
@@ -165,7 +174,7 @@ const main = () => {
     const filteredTeaOptions = TEA_OPTIONS.filter((tea) => {
       const matchesType = (blackTea && tea.black) || (herbalTea && tea.herbal)
       const matchesFormat = (teabag && tea.teabag) || (loose && tea.loose)
-      return matchesType && matchesFormat
+      return matchesType && matchesFormat && !tea.outOfStock
     })
 
     if (filteredTeaOptions.length === 0) {
