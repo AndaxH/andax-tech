@@ -57,6 +57,11 @@ const nextraExportsPlus = {
         permanent: true
       },
       {
+        source: '/games',
+        destination: '/games/index.html',
+        permanent: true
+      },
+      {
         source: '/zoom',
         destination: '/zoom-captions/index.html',
         permanent: true

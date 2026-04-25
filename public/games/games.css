@@ -1,0 +1,247 @@
+:root {
+  --color-bg: #faf8f5;
+  --color-surface: #ffffff;
+  --color-text: #2c2c2c;
+  --color-text-muted: #6b6b6b;
+  --color-accent: #8b5a2b;
+  --color-accent-hover: #6d4422;
+  --color-border: #e8e4df;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 800px) {
+  #root {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* Left panel - Games grid */
+.options-panel h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-accent);
+}
+
+.games-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.15s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+}
+
+.game-card a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.game-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--color-border);
+}
+
+.game-thumb-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.game-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.empty-state {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  padding: 1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  border: 1px dashed var(--color-border);
+}
+
+/* Right panel - Randomizer */
+.randomizer-panel {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+}
+
+#result-header {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+#result-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+#result-link[href='#'] {
+  pointer-events: none;
+}
+
+#result-thumb {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: none;
+}
+
+#result-thumb.visible {
+  display: block;
+}
+
+#result-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  min-height: 2.25rem;
+  word-wrap: break-word;
+}
+
+#result-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+#randomize {
+  background: var(--color-accent);
+  color: white;
+}
+
+#randomize:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+#randomize:active {
+  transform: translateY(0);
+}
+
+/* Filter options */
+#filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+#player-count {
+  width: 5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+#max-time {
+  width: 100%;
+  accent-color: var(--color-accent);
+}
+
+#max-time-display {
+  font-weight: 500;
+  color: var(--color-text);
+  text-transform: none;
+  letter-spacing: normal;
+}

@@ -13,7 +13,10 @@
       "mcp__plugin_playwright_playwright__browser_hover",
       "mcp__plugin_playwright_playwright__browser_click",
       "Bash(pnpm lint:*)",
-      "mcp__plugin_playwright_playwright__browser_snapshot"
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(pnpm typecheck *)"
     ]
   }
 }

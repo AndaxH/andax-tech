@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "node ./scripts/gen-rss.js && next build --webpack",
+    "gen-games": "node ./scripts/gen-games.js",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"

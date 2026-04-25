@@ -35,6 +35,7 @@ yarn-error.log*
 .vercel
 
 public/feed.xml
+scripts/collection.csv
 
 # typescript
 *.tsbuildinfo

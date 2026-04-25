@@ -1,0 +1,713 @@
+[
+  {
+    "id": "1961",
+    "name": "5 Alive",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 30,
+    "year": 1990
+  },
+  {
+    "id": "68448",
+    "name": "7 Wonders",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 7,
+    "playingTime": 30,
+    "year": 2010
+  },
+  {
+    "id": "173346",
+    "name": "7 Wonders Duel",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "playingTime": 30,
+    "year": 2015
+  },
+  {
+    "id": "103343",
+    "name": "A Game of Thrones: The Board Game (Second Edition)",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "playingTime": 240,
+    "year": 2011
+  },
+  {
+    "id": "6541",
+    "name": "Articulate!",
+    "thumbnail": null,
+    "minPlayers": 4,
+    "maxPlayers": 8,
+    "playingTime": 60,
+    "year": 1992
+  },
+  {
+    "id": "230802",
+    "name": "Azul",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 45,
+    "year": 2017
+  },
+  {
+    "id": "2397",
+    "name": "Backgammon",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "playingTime": 30,
+    "year": -3000
+  },
+  {
+    "id": "219513",
+    "name": "Bärenpark",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 45,
+    "year": 2017
+  },
+  {
+    "id": "10547",
+    "name": "Betrayal at House on the Hill",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "playingTime": 60,
+    "year": 2004
+  },
+  {
+    "id": "168421",
+    "name": "Bohnanza: Ladies & Gangsters",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 45,
+    "year": 2015
+  },
+  {
+    "id": "1333",
+    "name": "Boom-O",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 20,
+    "year": 2000
+  },
+  {
+    "id": "17104",
+    "name": "Canasta",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 45,
+    "year": 1939
+  },
+  {
+    "id": "822",
+    "name": "Carcassonne",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 45,
+    "year": 2000
+  },
+  {
+    "id": "295947",
+    "name": "Cascadia",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "playingTime": 45,
+    "year": 2021
+  },
+  {
+    "id": "407317",
+    "name": "Cascadia: Rolling Hills",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2024
+  },
+  {
+    "id": "407318",
+    "name": "Cascadia: Rolling Rivers",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2024
+  },
+  {
+    "id": "228504",
+    "name": "Cat Lady",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2017
+  },
+  {
+    "id": "298070",
+    "name": "Cat Lady: Box of Treats",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "playingTime": 30,
+    "year": 2020
+  },
+  {
+    "id": "13",
+    "name": "Catan",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 4,
+    "playingTime": 120,
+    "year": 1995
+  },
+  {
+    "id": "2807",
+    "name": "Catan: 5-6 Player Expansion",
+    "thumbnail": null,
+    "minPlayers": 5,
+    "maxPlayers": 6,
+    "playingTime": 120,
+    "year": 1996
+  },
+  {
+    "id": "242574",
+    "name": "Century: Eastern Wonders",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 45,
+    "year": 2018
+  },
+  {
+    "id": "209685",
+    "name": "Century: Spice Road",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 45,
+    "year": 2017
+  },
+  {
+    "id": "478",
+    "name": "Citadels",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "playingTime": 60,
+    "year": 2000
+  },
+  {
+    "id": "178900",
+    "name": "Codenames",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "playingTime": 15,
+    "year": 2015
+  },
+  {
+    "id": "39856",
+    "name": "Dixit",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "playingTime": 30,
+    "year": 2008
+  },
+  {
+    "id": "142131",
+    "name": "Dominion: Big Box",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2010
+  },
+  {
+    "id": "104557",
+    "name": "Dominion: Hinterlands",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2011
+  },
+  {
+    "id": "298055",
+    "name": "Dominion: Menagerie",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2020
+  },
+  {
+    "id": "172933",
+    "name": "Dragonwood",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 20,
+    "year": 2015
+  },
+  {
+    "id": "223040",
+    "name": "Fantasy Realms",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 20,
+    "year": 2017
+  },
+  {
+    "id": "436126",
+    "name": "Finspan",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2025
+  },
+  {
+    "id": "138161",
+    "name": "Firefly: The Game",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "playingTime": 240,
+    "year": 2013
+  },
+  {
+    "id": "245271",
+    "name": "Forbidden Sky",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2018
+  },
+  {
+    "id": "98778",
+    "name": "Hanabi",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 25,
+    "year": 2010
+  },
+  {
+    "id": "414317",
+    "name": "Harmonies",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "playingTime": 45,
+    "year": 2024
+  },
+  {
+    "id": "699",
+    "name": "HeroQuest",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 90,
+    "year": 1989
+  },
+  {
+    "id": "154597",
+    "name": "Hive Pocket",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "playingTime": 20,
+    "year": 2010
+  },
+  {
+    "id": "155821",
+    "name": "Inis",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 90,
+    "year": 2016
+  },
+  {
+    "id": "63888",
+    "name": "Innovation",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2010
+  },
+  {
+    "id": "388367",
+    "name": "Innovation Ultimate",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2025
+  },
+  {
+    "id": "92898",
+    "name": "Innovation: Echoes of the Past",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2011
+  },
+  {
+    "id": "129622",
+    "name": "Love Letter",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 20,
+    "year": 2012
+  },
+  {
+    "id": "4035",
+    "name": "Man Bites Dog",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 10,
+    "year": 2002
+  },
+  {
+    "id": "1927",
+    "name": "Munchkin",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "playingTime": 120,
+    "year": 2001
+  },
+  {
+    "id": "428636",
+    "name": "Oddland",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 40,
+    "year": 2025
+  },
+  {
+    "id": "147949",
+    "name": "One Night Ultimate Werewolf",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "playingTime": 10,
+    "year": 2014
+  },
+  {
+    "id": "30549",
+    "name": "Pandemic",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 45,
+    "year": 2008
+  },
+  {
+    "id": "163412",
+    "name": "Patchwork",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "playingTime": 30,
+    "year": 2014
+  },
+  {
+    "id": "1258",
+    "name": "Phase 10",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 45,
+    "year": 1982
+  },
+  {
+    "id": "1115",
+    "name": "Poker",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "playingTime": 60,
+    "year": 1810
+  },
+  {
+    "id": "2651",
+    "name": "Power Grid",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 120,
+    "year": 2004
+  },
+  {
+    "id": "181",
+    "name": "Risk",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 120,
+    "year": 1959
+  },
+  {
+    "id": "428635",
+    "name": "Ruins",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 40,
+    "year": 2025
+  },
+  {
+    "id": "24028",
+    "name": "Rukshuk",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 30,
+    "year": 2006
+  },
+  {
+    "id": "811",
+    "name": "Rummikub",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 60,
+    "year": 1977
+  },
+  {
+    "id": "2381",
+    "name": "Scattergories",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 30,
+    "year": 1988
+  },
+  {
+    "id": "169786",
+    "name": "Scythe",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 115,
+    "year": 2016
+  },
+  {
+    "id": "1269",
+    "name": "Skip-Bo",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 20,
+    "year": 1967
+  },
+  {
+    "id": "148228",
+    "name": "Splendor",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "playingTime": 30,
+    "year": 2014
+  },
+  {
+    "id": "147020",
+    "name": "Star Realms",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "playingTime": 20,
+    "year": 2014
+  },
+  {
+    "id": "173875",
+    "name": "Superfight: The Loot Crate Deck",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "playingTime": 45,
+    "year": 2015
+  },
+  {
+    "id": "133473",
+    "name": "Sushi Go!",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 15,
+    "year": 2013
+  },
+  {
+    "id": "271869",
+    "name": "Sushi Roll",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 20,
+    "year": 2019
+  },
+  {
+    "id": "316927",
+    "name": "Sweet Existence: A Strange Planet Card Game",
+    "thumbnail": null,
+    "minPlayers": 4,
+    "maxPlayers": 8,
+    "playingTime": 40,
+    "year": 2020
+  },
+  {
+    "id": "167791",
+    "name": "Terraforming Mars",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 120,
+    "year": 2016
+  },
+  {
+    "id": "218127",
+    "name": "Terraforming Mars: Hellas & Elysium",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 120,
+    "year": 2017
+  },
+  {
+    "id": "247030",
+    "name": "Terraforming Mars: Prelude",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 120,
+    "year": 2018
+  },
+  {
+    "id": "273473",
+    "name": "Terraforming Mars: Turmoil",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 150,
+    "year": 2019
+  },
+  {
+    "id": "57287",
+    "name": "The Art of Conversation",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 45,
+    "year": 2006
+  },
+  {
+    "id": "231302",
+    "name": "The Cat Game",
+    "thumbnail": null,
+    "minPlayers": 3,
+    "maxPlayers": 99,
+    "playingTime": 30,
+    "year": 2017
+  },
+  {
+    "id": "284083",
+    "name": "The Crew: The Quest for Planet Nine",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 20,
+    "year": 2019
+  },
+  {
+    "id": "128882",
+    "name": "The Resistance: Avalon",
+    "thumbnail": null,
+    "minPlayers": 5,
+    "maxPlayers": 10,
+    "playingTime": 30,
+    "year": 2012
+  },
+  {
+    "id": "53383",
+    "name": "Ticket to Ride: Europa 1912",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2009
+  },
+  {
+    "id": "14996",
+    "name": "Ticket to Ride: Europe",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2005
+  },
+  {
+    "id": "123540",
+    "name": "Tokaido",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 45,
+    "year": 2012
+  },
+  {
+    "id": "2223",
+    "name": "UNO",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "playingTime": 30,
+    "year": 1971
+  },
+  {
+    "id": "428638",
+    "name": "Vegas Strip",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "playingTime": 40,
+    "year": 2025
+  },
+  {
+    "id": "336622",
+    "name": "Wrong Party",
+    "thumbnail": null,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "playingTime": 60,
+    "year": 2021
+  },
+  {
+    "id": "410201",
+    "name": "Wyrmspan",
+    "thumbnail": null,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "playingTime": 90,
+    "year": 2024
+  }
+]

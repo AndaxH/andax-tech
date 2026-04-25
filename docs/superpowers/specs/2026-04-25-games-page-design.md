@@ -21,6 +21,7 @@ Static page served from `public/games/`. Build-time data fetch from BoardGameGee
 2. **`public/games/games.json`** — committed to repo.
    - Refreshed via `pnpm gen-games`.
    - Per-game shape:
+
      ```json
      {
        "id": "12345",
