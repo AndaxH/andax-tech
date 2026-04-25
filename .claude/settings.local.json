@@ -16,7 +16,8 @@
       "mcp__plugin_playwright_playwright__browser_snapshot",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(pnpm typecheck *)"
+      "Bash(pnpm typecheck *)",
+      "Read(//tmp/**)"
     ]
   }
 }

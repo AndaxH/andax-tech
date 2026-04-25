@@ -7,6 +7,9 @@ const __dirname = dirname(__filename)
 
 const IN_PATH = join(__dirname, 'collection.csv')
 const OUT_PATH = join(__dirname, '..', 'public', 'games', 'games.json')
+const FETCH_DELAY_MS = 250
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 const parseCsvLine = (line) => {
   const fields = []
@@ -54,7 +57,13 @@ const parseCsv = (text) => {
   const iYear = idx('yearpublished')
   const iOwn = idx('own')
 
-  const required = { objectname: iName, objectid: iId, minplayers: iMin, maxplayers: iMax, playingtime: iTime }
+  const required = {
+    objectname: iName,
+    objectid: iId,
+    minplayers: iMin,
+    maxplayers: iMax,
+    playingtime: iTime
+  }
   for (const [k, v] of Object.entries(required)) {
     if (v === -1) throw new Error(`CSV missing required column: ${k}`)
   }
@@ -82,7 +91,31 @@ const parseCsv = (text) => {
   return games
 }
 
-const main = () => {
+const fetchThumbnail = async (id) => {
+  const url = `https://api.geekdo.com/api/geekitems?objectid=${id}&objecttype=thing&pageid=1&showcount=1`
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`HTTP ${res.status}`)
+  const data = await res.json()
+  const images = data?.item?.images
+  if (!images) return null
+  return images.square200 || images.thumb || images.previewthumb || null
+}
+
+const loadExistingThumbnails = () => {
+  if (!existsSync(OUT_PATH)) return new Map()
+  try {
+    const existing = JSON.parse(readFileSync(OUT_PATH, 'utf8'))
+    const map = new Map()
+    for (const g of existing) {
+      if (g.thumbnail) map.set(g.id, g.thumbnail)
+    }
+    return map
+  } catch {
+    return new Map()
+  }
+}
+
+const main = async () => {
   if (!existsSync(IN_PATH)) {
     console.error(
       `Missing ${IN_PATH}.\n\n` +
@@ -100,10 +133,39 @@ const main = () => {
   if (games.length === 0) {
     throw new Error('No games parsed from CSV file')
   }
+
+  const cache = loadExistingThumbnails()
+  let cached = 0
+  let fetched = 0
+  let failed = 0
+
+  for (const game of games) {
+    if (cache.has(game.id)) {
+      game.thumbnail = cache.get(game.id)
+      cached++
+      continue
+    }
+    try {
+      const thumb = await fetchThumbnail(game.id)
+      game.thumbnail = thumb
+      fetched++
+      console.warn(`  [${fetched + cached}/${games.length}] ${game.name}`)
+      await sleep(FETCH_DELAY_MS)
+    } catch (err) {
+      failed++
+      console.warn(`  Failed thumbnail for ${game.name} (${game.id}): ${err.message}`)
+    }
+  }
+
   games.sort((a, b) => a.name.localeCompare(b.name))
   mkdirSync(dirname(OUT_PATH), { recursive: true })
   writeFileSync(OUT_PATH, JSON.stringify(games, null, 2))
-  console.warn(`Wrote ${games.length} games to ${OUT_PATH}`)
+  console.warn(
+    `Wrote ${games.length} games (${cached} cached, ${fetched} fetched, ${failed} failed) to ${OUT_PATH}`
+  )
 }
 
-main()
+main().catch((err) => {
+  console.error('Failed to generate games.json:', err.message)
+  process.exit(1)
+})
